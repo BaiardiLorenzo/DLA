@@ -1,0 +1,11 @@
+ModuleList(
+  (0): Linear(in_features=784, out_features=16, bias=True)
+  (1): Linear(in_features=16, out_features=16, bias=True)
+  (2): Linear(in_features=16, out_features=10, bias=True)
+)
+
+
+Training epoch 0: 100%|██████████| 430/430 [00:17<00:00, 24.65it/s]
+
+
+Training epoch 1:   0%|          | 0/430 [00:03<?, ?it/s]

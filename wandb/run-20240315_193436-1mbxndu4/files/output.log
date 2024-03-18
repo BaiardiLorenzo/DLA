@@ -1,0 +1,39 @@
+Using device cpu
+ModuleList(
+  (0): Linear(in_features=784, out_features=128, bias=True)
+  (1): Linear(in_features=128, out_features=128, bias=True)
+  (2): Linear(in_features=128, out_features=64, bias=True)
+  (3): Linear(in_features=64, out_features=64, bias=True)
+  (4): Linear(in_features=64, out_features=10, bias=True)
+)
+
+
+
+Training epoch 0: 100%|██████████| 430/430 [00:14<00:00, 29.63it/s]
+
+
+
+
+Training epoch 1: 100%|██████████| 430/430 [00:14<00:00, 30.21it/s]
+
+
+
+
+Training epoch 2: 100%|██████████| 430/430 [00:14<00:00, 29.03it/s]
+
+
+
+Training epoch 3: 100%|██████████| 430/430 [00:14<00:00, 29.65it/s]
+
+
+
+Training epoch 4: 100%|██████████| 430/430 [00:13<00:00, 31.11it/s]
+
+
+
+
+Training epoch 5: 100%|██████████| 430/430 [00:14<00:00, 30.18it/s]
+
+
+
+Training epoch 6:   0%|          | 0/430 [00:08<?, ?it/s]

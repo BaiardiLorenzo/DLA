@@ -1,0 +1,90 @@
+Using device: cuda
+ModuleList(
+  (0): Linear(in_features=784, out_features=16, bias=True)
+  (1): Linear(in_features=16, out_features=16, bias=True)
+  (2): Linear(in_features=16, out_features=10, bias=True)
+)
+
+
+Training epoch 0: 100%|██████████| 430/430 [00:15<00:00, 27.70it/s]
+
+
+
+
+Training epoch 1: 100%|██████████| 430/430 [00:16<00:00, 26.19it/s]
+
+
+
+Training epoch 2: 100%|██████████| 430/430 [00:15<00:00, 27.53it/s]
+
+
+
+Training epoch 3: 100%|██████████| 430/430 [00:15<00:00, 28.12it/s]
+
+
+
+Training epoch 4: 100%|██████████| 430/430 [00:15<00:00, 28.42it/s]
+
+
+
+
+Training epoch 5: 100%|██████████| 430/430 [00:15<00:00, 28.54it/s]
+
+
+
+Training epoch 6: 100%|██████████| 430/430 [00:15<00:00, 27.80it/s]
+
+
+
+Training epoch 7: 100%|██████████| 430/430 [00:16<00:00, 25.95it/s]
+
+
+
+Training epoch 8: 100%|██████████| 430/430 [00:16<00:00, 25.68it/s]
+
+
+
+
+Training epoch 9: 100%|██████████| 430/430 [00:16<00:00, 26.77it/s]
+
+
+
+Training epoch 10: 100%|██████████| 430/430 [00:16<00:00, 26.45it/s]
+
+
+
+Training epoch 11: 100%|██████████| 430/430 [00:16<00:00, 26.22it/s]
+
+
+
+
+Training epoch 12: 100%|██████████| 430/430 [00:15<00:00, 27.14it/s]
+
+
+
+
+Training epoch 13: 100%|██████████| 430/430 [00:16<00:00, 26.81it/s]
+
+
+
+
+Training epoch 14: 100%|██████████| 430/430 [00:15<00:00, 27.14it/s]
+
+
+
+
+Training epoch 15: 100%|██████████| 430/430 [00:13<00:00, 32.71it/s]
+
+
+
+Training epoch 16: 100%|██████████| 430/430 [00:16<00:00, 26.73it/s]
+
+
+
+
+
+Training epoch 17: 100%|██████████| 430/430 [00:16<00:00, 26.60it/s]
+
+
+
+Training epoch 18:   0%|          | 0/430 [00:06<?, ?it/s]

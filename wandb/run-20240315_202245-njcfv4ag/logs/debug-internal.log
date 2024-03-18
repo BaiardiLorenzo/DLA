@@ -1,0 +1,853 @@
+2024-03-15 20:22:53,228 INFO    StreamThr :17068 [internal.py:wandb_internal():86] W&B internal server running at pid: 17068, started at: 2024-03-15 20:22:53.227071
+2024-03-15 20:22:53,229 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status
+2024-03-15 20:22:53,230 INFO    WriterThread:17068 [datastore.py:open_for_write():87] open: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\run-njcfv4ag.wandb
+2024-03-15 20:22:53,232 DEBUG   SenderThread:17068 [sender.py:send():382] send: header
+2024-03-15 20:22:53,232 DEBUG   SenderThread:17068 [sender.py:send():382] send: run
+2024-03-15 20:22:54,027 INFO    SenderThread:17068 [dir_watcher.py:__init__():211] watching files in: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files
+2024-03-15 20:22:54,027 INFO    SenderThread:17068 [sender.py:_start_run_threads():1136] run started: njcfv4ag with start time 1710530572.282306
+2024-03-15 20:22:54,038 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: check_version
+2024-03-15 20:22:54,039 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: check_version
+2024-03-15 20:22:54,601 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: run_start
+2024-03-15 20:22:54,616 DEBUG   HandlerThread:17068 [system_info.py:__init__():27] System info init
+2024-03-15 20:22:54,616 DEBUG   HandlerThread:17068 [system_info.py:__init__():42] System info init done
+2024-03-15 20:22:54,616 INFO    HandlerThread:17068 [system_monitor.py:start():194] Starting system monitor
+2024-03-15 20:22:54,616 INFO    SystemMonitor:17068 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-15 20:22:54,616 INFO    HandlerThread:17068 [system_monitor.py:probe():214] Collecting system info
+2024-03-15 20:22:54,619 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started cpu monitoring
+2024-03-15 20:22:54,620 DEBUG   HandlerThread:17068 [system_info.py:probe():151] Probing system
+2024-03-15 20:22:54,620 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started disk monitoring
+2024-03-15 20:22:54,621 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started gpu monitoring
+2024-03-15 20:22:54,626 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started memory monitoring
+2024-03-15 20:22:54,638 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started network monitoring
+2024-03-15 20:22:54,638 DEBUG   HandlerThread:17068 [system_info.py:_probe_git():136] Probing git
+2024-03-15 20:22:54,640 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:22:54,640 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:22:54,706 DEBUG   HandlerThread:17068 [system_info.py:_probe_git():144] Probing git done
+2024-03-15 20:22:54,706 DEBUG   HandlerThread:17068 [system_info.py:probe():199] Probing system done
+2024-03-15 20:22:54,706 DEBUG   HandlerThread:17068 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.8', 'heartbeatAt': '2024-03-15T19:22:54.620769', 'startedAt': '2024-03-15T19:22:45.977805', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/BaiardiLorenzo/DLA.git', 'commit': 'd5a0551a5a26530be6356611f7c19e605f233a60'}, 'email': 'lorebaia@gmail.com', 'root': 'C:/Users/loreb/Documents/IntellijProjects/PycharmProjects/DLA', 'host': 'BlackPC', 'username': 'loreb', 'executable': 'c:\\src\\anaconda3\\envs\\DLA\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 6, 'cpu_freq': {'current': 3600.0, 'min': 0.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 0.0, 'max': 3600.0}], 'disk': {'/': {'total': 232.08644485473633, 'used': 138.29454803466797}}, 'gpu': 'NVIDIA GeForce GTX 1050 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1050 Ti', 'memory_total': 4294967296}], 'memory': {'total': 15.958698272705078}}
+2024-03-15 20:22:54,706 INFO    HandlerThread:17068 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-15 20:22:54,706 INFO    HandlerThread:17068 [system_monitor.py:probe():227] Publishing system info
+2024-03-15 20:22:54,706 DEBUG   HandlerThread:17068 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-15 20:22:55,032 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\conda-environment.yaml
+2024-03-15 20:22:56,657 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:22:56,657 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:22:57,728 DEBUG   HandlerThread:17068 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-15 20:22:57,729 INFO    HandlerThread:17068 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-15 20:22:57,729 DEBUG   SenderThread:17068 [sender.py:send():382] send: files
+2024-03-15 20:22:57,729 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-15 20:22:57,744 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-15 20:22:57,744 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: python_packages
+2024-03-15 20:22:57,745 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:22:57,745 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:22:57,747 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:22:58,058 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\conda-environment.yaml
+2024-03-15 20:22:58,059 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\requirements.txt
+2024-03-15 20:22:58,059 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-metadata.json
+2024-03-15 20:22:58,388 DEBUG   SenderThread:17068 [sender.py:send():382] send: telemetry
+2024-03-15 20:22:58,388 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:22:58,666 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:22:58,676 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:22:58,726 INFO    wandb-upload_0:17068 [upload_job.py:push():131] Uploaded file C:\Users\loreb\AppData\Local\Temp\tmpdymx1v4ewandb\cf6ua6k9-wandb-metadata.json
+2024-03-15 20:22:59,059 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:00,704 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:00,704 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:01,076 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:02,722 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:02,722 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:03,410 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:04,738 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:04,738 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:06,756 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:06,756 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:08,456 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:08,773 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:08,773 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:10,795 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:10,795 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:11,144 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:12,753 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:23:12,753 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:23:12,753 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:23:12,832 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:12,832 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:13,177 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:13,773 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:14,853 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:14,853 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:15,193 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:16,871 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:16,871 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:17,873 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:23:17,874 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:23:17,874 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:23:17,879 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:23:18,227 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:23:18,884 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:18,884 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:18,893 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:19,238 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:20,899 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:20,900 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:22,924 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:22,924 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:23,945 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:24,261 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\config.yaml
+2024-03-15 20:23:24,967 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:23:24,968 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:24,968 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:26,974 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:26,975 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:27,759 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:23:27,761 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:23:27,761 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:23:28,987 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:28,987 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:29,767 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:30,995 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:30,995 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:31,321 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:33,023 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:33,023 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:33,341 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:35,044 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:35,044 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:35,362 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:35,561 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:37,058 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:37,058 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:37,625 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:23:37,625 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:23:37,625 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:23:37,631 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:23:38,378 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:23:39,073 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:39,074 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:39,391 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:40,661 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:41,091 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:41,091 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:42,775 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:23:42,775 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:23:42,776 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:23:43,160 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:43,161 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:45,178 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:45,178 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:45,992 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:47,203 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:47,204 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:49,223 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:49,224 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:50,490 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:50,998 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:51,248 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:51,248 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:52,512 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:53,321 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:53,321 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:54,532 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:54,642 DEBUG   SystemMonitor:17068 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-15 20:23:54,645 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:23:55,369 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:23:55,371 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:55,371 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:56,659 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:23:57,382 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:57,382 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:57,776 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:23:57,791 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:23:57,792 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:23:58,038 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:23:58,038 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:23:58,038 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:23:58,039 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:23:58,562 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:23:58,562 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:23:59,394 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:23:59,394 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:01,410 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:01,410 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:02,076 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:03,419 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:03,419 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:05,436 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:05,436 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:07,111 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:07,457 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:07,457 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:09,475 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:09,475 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:11,492 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:11,492 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:12,144 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:12,663 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:12,779 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:24:12,796 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:24:12,797 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:24:13,509 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:13,509 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:14,693 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:15,530 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:15,530 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:16,697 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:17,225 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:17,547 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:17,547 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:18,359 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:24:18,359 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:24:18,359 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:24:18,360 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:24:18,712 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:24:18,713 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:19,570 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:19,570 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:20,724 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:21,592 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:21,592 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:22,396 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:23,607 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:23,608 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:24,647 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:24:25,653 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:24:25,655 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:25,655 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:27,669 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:27,669 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:27,682 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:27,793 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:24:27,808 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:24:27,808 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:24:29,681 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:29,682 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:31,700 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:31,700 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:32,744 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:32,805 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:33,717 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:33,717 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:34,815 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:35,736 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:35,736 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:36,832 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:37,780 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:37,780 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:37,822 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:38,663 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:24:38,664 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:24:38,665 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:24:38,666 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:24:38,847 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:24:38,848 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:39,795 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:39,796 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:40,863 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:41,810 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:41,810 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:42,797 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:24:42,829 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:24:42,829 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:24:43,090 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:43,826 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:43,826 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:45,848 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:45,848 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:47,865 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:47,865 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:48,118 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:49,877 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:49,877 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:51,899 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:51,899 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:52,943 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:53,161 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:53,925 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:53,925 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:54,661 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:24:54,964 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:55,972 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:24:55,974 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:55,974 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:56,981 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:24:57,812 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:24:57,828 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:24:57,828 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:24:57,987 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:57,987 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:24:58,309 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:24:58,949 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:24:58,950 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:24:58,950 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:24:58,951 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:24:58,996 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:24:58,996 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:00,001 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:00,001 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:01,012 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:02,022 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:02,022 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:03,962 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:04,038 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:04,038 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:06,059 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:06,059 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:08,089 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:08,089 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:08,988 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:10,107 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:10,107 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:12,132 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:12,132 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:12,827 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:25:12,827 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:25:12,828 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:25:13,123 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:14,012 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:14,159 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:14,160 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:15,145 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:16,179 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:16,179 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:17,149 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:18,201 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:18,201 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:18,960 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:25:18,970 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:25:18,970 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:25:18,970 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:25:19,165 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:25:19,165 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:19,982 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:20,224 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:20,224 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:21,180 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:22,245 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:22,245 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:24,263 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:24,263 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:24,667 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:25:25,677 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:26,305 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:25:26,307 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:26,307 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:27,832 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:25:27,833 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:25:27,833 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:25:28,323 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:28,323 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:30,335 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:30,335 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:31,095 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:32,352 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:32,352 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:33,273 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:34,373 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:34,373 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:35,296 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:36,391 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:36,391 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:36,931 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:37,339 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:38,411 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:38,411 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:40,433 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:40,433 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:40,809 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:25:40,810 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:25:40,810 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:25:40,811 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:25:41,383 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:25:41,383 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:42,447 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:42,447 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:42,828 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:42,828 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:25:42,829 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:25:42,844 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:25:43,399 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:44,461 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:44,461 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:46,477 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:46,477 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:48,101 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:48,495 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:48,495 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:50,512 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:50,512 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:52,528 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:52,528 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:53,127 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:54,548 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:54,548 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:54,669 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:25:55,469 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:56,724 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:25:56,726 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:56,726 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:57,498 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:25:57,835 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:25:57,835 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:25:57,849 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:25:58,742 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:58,742 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:25:59,067 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:25:59,510 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:00,754 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:00,754 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:01,370 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:26:01,371 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:26:01,371 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:26:01,372 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:26:01,534 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:26:02,544 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:02,776 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:02,776 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:04,403 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:04,792 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:04,792 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:06,812 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:06,812 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:08,831 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:08,831 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:09,431 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:10,846 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:10,846 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:12,860 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:26:12,860 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:26:12,861 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:26:12,864 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:12,864 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:14,461 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:14,617 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:14,894 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:14,894 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:16,637 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:16,919 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:16,919 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:18,651 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:18,935 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:18,935 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:19,732 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:20,952 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:20,952 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:22,066 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:26:22,068 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:26:22,068 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:26:22,068 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:26:22,685 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:26:22,685 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:22,974 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:22,974 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:24,678 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:26:24,710 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:24,983 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:24,984 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:25,687 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:27,029 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:26:27,031 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:27,031 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:27,849 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:26:27,852 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:26:27,852 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:26:29,035 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:29,035 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:31,050 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:31,050 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:31,115 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:33,067 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:33,067 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:35,086 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:35,086 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:36,195 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:36,798 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:37,122 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:37,122 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:38,818 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:39,141 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:39,142 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:40,820 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:41,165 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:41,165 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:41,448 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:42,777 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:26:42,778 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:26:42,778 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:26:42,779 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:26:42,851 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:26:42,867 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:26:42,868 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:26:42,870 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:26:42,870 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:43,193 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:43,193 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:44,885 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:45,210 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:45,211 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:47,085 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:47,230 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:47,230 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:49,258 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:49,259 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:51,283 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:51,283 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:52,113 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:53,299 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:53,299 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:54,683 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:26:55,392 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:55,392 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:56,973 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:57,226 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:26:57,449 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:26:57,457 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:57,458 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:57,880 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:26:57,890 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:26:57,891 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:26:59,005 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:26:59,476 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:26:59,476 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:01,032 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:01,492 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:01,492 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:02,595 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:03,505 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:03,505 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:03,586 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:27:03,586 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:27:03,587 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:27:03,587 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:27:04,060 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:27:05,070 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:05,519 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:05,519 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:07,538 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:07,538 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:07,603 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:09,552 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:09,552 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:11,575 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:11,575 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:12,636 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:12,884 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:27:12,901 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:27:12,901 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:27:13,587 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:13,587 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:15,604 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:15,604 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:17,198 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:17,623 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:17,623 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:17,678 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:19,210 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:19,633 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:19,634 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:21,220 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:21,649 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:21,649 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:22,727 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:23,165 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:27:23,165 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:27:23,166 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:27:23,167 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:27:23,237 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:27:23,664 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:23,665 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:24,687 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:27:25,248 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:25,683 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:25,683 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:27,723 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:27:27,725 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:27,725 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:27,887 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:27:27,918 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:27:27,918 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:27:28,117 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:29,732 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:29,732 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:31,747 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:31,747 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:33,138 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:33,766 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:33,767 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:35,772 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:35,772 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:37,366 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:37,786 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:37,786 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:38,569 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:39,368 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:39,796 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:39,796 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:41,379 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:41,819 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:41,819 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:42,648 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:27:42,649 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:27:42,649 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:27:42,650 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:27:42,887 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:27:42,919 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:27:42,919 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:27:43,389 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:27:43,389 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:43,829 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:43,829 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:44,207 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:45,393 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:45,839 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:45,839 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:47,859 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:47,860 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:49,236 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:49,867 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:49,868 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:51,873 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:51,873 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:53,882 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:53,882 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:54,279 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:27:54,688 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:27:55,896 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:55,896 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:57,491 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:57,889 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:27:57,930 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:27:57,930 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:27:57,945 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:27:57,947 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:57,947 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:59,519 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:27:59,954 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:27:59,954 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:00,055 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:28:01,522 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:28:01,957 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:01,957 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:03,141 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-15 20:28:03,142 DEBUG   SenderThread:17068 [sender.py:send():382] send: history
+2024-03-15 20:28:03,142 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: summary_record
+2024-03-15 20:28:03,143 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:28:03,533 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:28:03,533 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:28:03,974 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:03,974 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:05,170 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:28:05,550 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:28:05,978 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:05,978 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:07,990 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:07,990 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:10,007 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:10,007 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:10,222 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:28:12,009 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:12,009 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:12,220 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: pause
+2024-03-15 20:28:12,220 INFO    HandlerThread:17068 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-15 20:28:12,220 INFO    HandlerThread:17068 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-15 20:28:12,224 DEBUG   SystemMonitor:17068 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-15 20:28:12,224 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-15 20:28:12,224 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined disk monitor
+2024-03-15 20:28:12,224 DEBUG   SystemMonitor:17068 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-15 20:28:12,253 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:28:12,253 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-15 20:28:12,253 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined memory monitor
+2024-03-15 20:28:12,253 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined network monitor
+2024-03-15 20:28:12,293 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:28:12,598 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\output.log
+2024-03-15 20:28:12,906 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:28:12,937 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:28:12,937 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:28:16,216 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:28:21,239 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:28:26,280 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:28:27,915 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 20:28:27,955 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 20:28:27,956 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: stop_status
+2024-03-15 20:28:32,189 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:28:36,698 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: resume
+2024-03-15 20:28:36,698 INFO    HandlerThread:17068 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-03-15 20:28:36,698 INFO    HandlerThread:17068 [system_monitor.py:start():194] Starting system monitor
+2024-03-15 20:28:36,698 INFO    SystemMonitor:17068 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-15 20:28:36,698 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started cpu monitoring
+2024-03-15 20:28:36,706 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started disk monitoring
+2024-03-15 20:28:36,709 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started gpu monitoring
+2024-03-15 20:28:36,711 DEBUG   SenderThread:17068 [sender.py:send():382] send: telemetry
+2024-03-15 20:28:36,713 DEBUG   SenderThread:17068 [sender.py:send():382] send: exit
+2024-03-15 20:28:36,713 INFO    SenderThread:17068 [sender.py:send_exit():589] handling exit code: 0
+2024-03-15 20:28:36,713 INFO    SenderThread:17068 [sender.py:send_exit():591] handling runtime: 317
+2024-03-15 20:28:36,713 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:28:36,715 INFO    SenderThread:17068 [sender.py:send_exit():597] send defer
+2024-03-15 20:28:36,715 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 20:28:36,715 INFO    HandlerThread:17068 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-15 20:28:36,715 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: defer
+2024-03-15 20:28:36,715 INFO    SenderThread:17068 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-15 20:28:36,715 INFO    SenderThread:17068 [sender.py:transition_state():617] send defer: 1
+2024-03-15 20:28:36,716 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 20:28:36,716 INFO    HandlerThread:17068 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-15 20:28:36,716 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: defer
+2024-03-15 20:28:36,716 INFO    SenderThread:17068 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-15 20:28:36,716 INFO    SenderThread:17068 [sender.py:transition_state():617] send defer: 2
+2024-03-15 20:28:36,717 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 20:28:36,717 INFO    HandlerThread:17068 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-15 20:28:36,717 INFO    HandlerThread:17068 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-15 20:28:36,721 INFO    SystemMonitor:17068 [interfaces.py:start():190] Started memory monitoring
+2024-03-15 20:28:36,721 DEBUG   SystemMonitor:17068 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-15 20:28:36,721 DEBUG   SystemMonitor:17068 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-15 20:28:36,722 DEBUG   SystemMonitor:17068 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-15 20:28:36,721 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:36,723 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-15 20:28:36,723 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined disk monitor
+2024-03-15 20:28:36,723 ERROR   gpu       :17068 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-15 20:28:36,752 ERROR   gpu       :17068 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-15 20:28:36,752 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-15 20:28:36,752 INFO    HandlerThread:17068 [interfaces.py:finish():202] Joined memory monitor
+2024-03-15 20:28:36,753 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: defer
+2024-03-15 20:28:36,753 INFO    SenderThread:17068 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-15 20:28:36,753 INFO    SenderThread:17068 [sender.py:transition_state():617] send defer: 3
+2024-03-15 20:28:36,753 DEBUG   SenderThread:17068 [sender.py:send():382] send: stats
+2024-03-15 20:28:36,753 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 20:28:36,753 INFO    HandlerThread:17068 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-15 20:28:36,753 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: defer
+2024-03-15 20:28:36,753 INFO    SenderThread:17068 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-15 20:28:36,753 INFO    SenderThread:17068 [sender.py:transition_state():617] send defer: 4
+2024-03-15 20:28:36,754 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 20:28:36,754 INFO    HandlerThread:17068 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-15 20:28:36,754 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: defer
+2024-03-15 20:28:36,754 INFO    SenderThread:17068 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-15 20:28:36,754 INFO    SenderThread:17068 [sender.py:transition_state():617] send defer: 5
+2024-03-15 20:28:36,754 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 20:28:36,754 INFO    HandlerThread:17068 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-15 20:28:36,754 DEBUG   SenderThread:17068 [sender.py:send():382] send: summary
+2024-03-15 20:28:36,755 INFO    SenderThread:17068 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-15 20:28:36,757 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: defer
+2024-03-15 20:28:36,757 INFO    SenderThread:17068 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-15 20:28:36,757 INFO    SenderThread:17068 [sender.py:transition_state():617] send defer: 6
+2024-03-15 20:28:36,758 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: defer
+2024-03-15 20:28:36,758 INFO    HandlerThread:17068 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-15 20:28:36,758 DEBUG   SenderThread:17068 [sender.py:send_request():409] send_request: defer
+2024-03-15 20:28:36,759 INFO    SenderThread:17068 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-15 20:28:36,761 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 20:28:36,788 INFO    Thread-45 :17068 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\files\wandb-summary.json
+2024-03-15 20:28:36,932 ERROR   SenderThread:17068 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-15 20:28:36,932 ERROR   SenderThread:17068 [internal_api.py:execute():374] {"errors":[{"message":"run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-15 20:28:37,726 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-15 20:28:38,356 ERROR   SenderThread:17068 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-15 20:28:38,356 ERROR   SenderThread:17068 [internal_api.py:execute():374] {"errors":[{"message":"run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-15 20:28:41,001 ERROR   SenderThread:17068 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-15 20:28:41,001 ERROR   SenderThread:17068 [internal_api.py:execute():374] {"errors":[{"message":"run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-15 20:28:41,001 INFO    SenderThread:17068 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+2024-03-15 20:28:42,770 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:28:45,658 ERROR   SenderThread:17068 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-15 20:28:45,658 ERROR   SenderThread:17068 [internal_api.py:execute():374] {"errors":[{"message":"run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-15 20:28:47,788 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:28:52,825 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:28:54,411 ERROR   SenderThread:17068 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-15 20:28:54,411 ERROR   SenderThread:17068 [internal_api.py:execute():374] {"errors":[{"message":"run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-15 20:28:57,876 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:02,908 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:07,198 ERROR   FileStreamThread:17068 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/lorebaia/DLA%20Assigment%201/njcfv4ag/file_stream
+NoneType: None
+2024-03-15 20:29:07,953 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:11,096 ERROR   SenderThread:17068 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-15 20:29:11,096 ERROR   SenderThread:17068 [internal_api.py:execute():374] {"errors":[{"message":"run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-15 20:29:12,989 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:18,021 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:23,044 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:28,072 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:33,107 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:38,131 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:43,162 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:43,543 ERROR   SenderThread:17068 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-15 20:29:43,543 ERROR   SenderThread:17068 [internal_api.py:execute():374] {"errors":[{"message":"run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-15 20:29:48,194 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:53,227 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:29:58,254 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:03,293 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:08,338 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:13,374 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:18,408 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:23,444 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:28,478 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:33,534 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:38,578 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:43,602 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:48,631 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:53,674 DEBUG   HandlerThread:17068 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 20:30:58,089 ERROR   SenderThread:17068 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-15 20:30:58,089 ERROR   SenderThread:17068 [internal_api.py:execute():374] {"errors":[{"message":"run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-15 20:30:58,696 INFO    WriterThread:17068 [datastore.py:close():296] close: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_202245-njcfv4ag\run-njcfv4ag.wandb
+2024-03-15 20:30:58,696 INFO    HandlerThread:17068 [handler.py:finish():869] shutting down handler
+2024-03-15 20:30:58,698 ERROR   StreamThr :17068 [internal.py:wandb_internal():174] Thread SenderThread:
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2216, in upsert_run
+    response = self.gql(
+               ^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\internal_util.py", line 49, in run
+    self._run()
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\internal_util.py", line 100, in _run
+    self._process(record)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\internal.py", line 328, in _process
+    self._sm.send(record)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\sender.py", line 389, in send
+    send_handler(record)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\sender.py", line 411, in send_request
+    send_handler(record)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\sender.py", line 639, in send_request_defer
+    self.debounce(final=True)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\sender.py", line 540, in debounce
+    self._maybe_update_config(always=final)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\sender.py", line 517, in _maybe_update_config
+    self._debounce_config()
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\internal\sender.py", line 546, in _debounce_config
+    self._api.upsert_run(
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\apis\normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: run lorebaia/DLA Assigment 1/njcfv4ag was previously created and deleted; try a new run name (Error 409: Conflict)

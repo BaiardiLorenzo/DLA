@@ -1,0 +1,580 @@
+2024-03-15 18:45:59,635 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 18:45:59,636 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 18:45:59,636 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 18:45:59,636 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 18:45:59,636 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 18:45:59,636 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 18:45:59,636 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 18:45:59,636 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184559-8lytgv4a\logs\debug.log
+2024-03-15 18:45:59,637 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184559-8lytgv4a\logs\debug-internal.log
+2024-03-15 18:45:59,637 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 18:45:59,637 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 18:45:59,637 INFO    MainThread:15036 [wandb_init.py:init():591] re-initializing run, found existing run on stack: v4l54wfh
+2024-03-15 18:45:59,641 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/v4l54wfh
+2024-03-15 18:45:59,642 INFO    MainThread:15036 [jupyter.py:save_history():445] not saving jupyter history
+2024-03-15 18:45:59,642 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 18:45:59,642 INFO    MainThread:15036 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2024-03-15 18:45:59,643 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 18:45:59,643 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 18:45:59,643 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 18:46:07,205 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 18:46:07,205 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 18:46:07,225 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 18:46:07,758 WARNING MainThread:15036 [wandb_init.py:init():1198] interrupted
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 601, in init
+    latest_run.finish()
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_run.py", line 420, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_run.py", line 1961, in finish
+    return self._finish(exit_code, quiet)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_run.py", line 1993, in _finish
+    wandb._sentry.end_session()
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\analytics\sentry.py", line 43, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\analytics\sentry.py", line 178, in end_session
+    client.flush()
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\sentry_sdk\client.py", line 767, in flush
+    self.transport.flush(timeout=timeout, callback=callback)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\sentry_sdk\transport.py", line 557, in flush
+    self._worker.flush(timeout, callback)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\sentry_sdk\worker.py", line 99, in flush
+    self._wait_flush(timeout, callback)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\sentry_sdk\worker.py", line 115, in _wait_flush
+    if not self._timed_queue_join(timeout - initial_timeout):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\sentry_sdk\worker.py", line 54, in _timed_queue_join
+    queue.all_tasks_done.wait(timeout=delay)
+  File "c:\src\anaconda3\envs\DLA\Lib\threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-03-15 18:46:52,490 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 18:46:52,490 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 18:46:52,490 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 18:46:52,490 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 18:46:52,490 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 18:46:52,490 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 18:46:52,495 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 18:46:52,495 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184652-qw2erj5p\logs\debug.log
+2024-03-15 18:46:52,496 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184652-qw2erj5p\logs\debug-internal.log
+2024-03-15 18:46:52,496 INFO    MainThread:15036 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019A02B106D0>
+2024-03-15 18:46:52,496 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 18:46:52,496 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 50}
+2024-03-15 18:46:52,496 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 18:46:52,496 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 18:46:52,499 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 18:46:52,499 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 18:46:52,503 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 18:46:52,503 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 18:46:52,503 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 18:46:52,539 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 18:46:53,357 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 18:46:53,913 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 18:46:53,913 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 18:46:59,242 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 18:46:59,242 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 18:46:59,242 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 18:46:59,243 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 18:46:59,243 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 18:46:59,268 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 18:46:59,269 INFO    MainThread:15036 [wandb_init.py:_pause_backend():437] pausing backend
+2024-03-15 18:47:38,595 INFO    MainThread:15036 [wandb_init.py:_resume_backend():442] resuming backend
+2024-03-15 18:47:38,608 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 18:47:38,608 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 18:47:38,608 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 18:47:38,608 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 18:47:38,608 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 18:47:38,608 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 18:47:38,609 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 18:47:38,609 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184738-a69i5q03\logs\debug.log
+2024-03-15 18:47:38,609 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184738-a69i5q03\logs\debug-internal.log
+2024-03-15 18:47:38,609 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 18:47:38,609 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 50}
+2024-03-15 18:47:38,609 INFO    MainThread:15036 [wandb_init.py:init():591] re-initializing run, found existing run on stack: qw2erj5p
+2024-03-15 18:47:38,611 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/qw2erj5p
+2024-03-15 18:47:38,611 INFO    MainThread:15036 [jupyter.py:save_history():445] not saving jupyter history
+2024-03-15 18:47:38,612 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 18:47:38,612 INFO    MainThread:15036 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2024-03-15 18:47:38,612 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 18:47:38,612 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 18:47:38,612 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 18:47:42,681 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 18:47:42,682 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 18:47:42,697 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 18:47:42,754 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 18:47:42,754 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 18:47:42,756 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 18:47:42,757 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 18:47:42,763 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 18:47:42,763 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 18:47:42,763 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 18:47:42,805 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 18:47:44,517 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 18:47:45,032 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 18:47:45,032 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 18:47:50,240 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 18:47:50,240 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 18:47:50,240 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 18:47:50,240 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 18:47:50,241 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 18:48:14,710 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 18:48:14,711 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 18:48:14,711 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 18:48:14,711 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 18:48:14,712 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 18:48:14,712 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 18:48:14,712 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 18:48:14,713 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184814-cz4s3e0t\logs\debug.log
+2024-03-15 18:48:14,713 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184814-cz4s3e0t\logs\debug-internal.log
+2024-03-15 18:48:14,713 INFO    MainThread:15036 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019A04ADCA90>
+2024-03-15 18:48:14,713 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 18:48:14,713 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 50}
+2024-03-15 18:48:14,713 INFO    MainThread:15036 [wandb_init.py:init():591] re-initializing run, found existing run on stack: a69i5q03
+2024-03-15 18:48:14,715 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/a69i5q03
+2024-03-15 18:48:14,715 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 18:48:14,715 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 18:48:14,716 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 18:48:18,815 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 18:48:18,815 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 18:48:18,821 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 18:48:18,869 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 18:48:18,870 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 18:48:18,872 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 18:48:18,872 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 18:48:18,877 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 18:48:18,877 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 18:48:18,878 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 18:48:18,920 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 18:48:20,665 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 18:48:21,200 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 18:48:21,200 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 18:48:26,744 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 18:48:26,744 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 18:48:26,744 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 18:48:26,744 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 18:48:26,745 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 18:48:45,107 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 18:48:45,107 INFO    MainThread:15036 [wandb_init.py:_pause_backend():437] pausing backend
+2024-03-15 18:48:46,718 INFO    MainThread:15036 [wandb_init.py:_resume_backend():442] resuming backend
+2024-03-15 18:48:46,729 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 18:48:46,729 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 18:48:46,729 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 18:48:46,729 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 18:48:46,729 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 18:48:46,730 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 18:48:46,730 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 18:48:46,730 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184846-c1hsd94r\logs\debug.log
+2024-03-15 18:48:46,731 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_184846-c1hsd94r\logs\debug-internal.log
+2024-03-15 18:48:46,731 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 18:48:46,731 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 50}
+2024-03-15 18:48:46,731 INFO    MainThread:15036 [wandb_init.py:init():591] re-initializing run, found existing run on stack: cz4s3e0t
+2024-03-15 18:48:46,733 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/cz4s3e0t
+2024-03-15 18:48:46,733 INFO    MainThread:15036 [jupyter.py:save_history():445] not saving jupyter history
+2024-03-15 18:48:46,733 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 18:48:46,733 INFO    MainThread:15036 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2024-03-15 18:48:46,733 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 18:48:46,734 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 18:48:46,734 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 18:48:50,836 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 18:48:50,836 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 18:48:50,840 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 18:48:50,886 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 18:48:50,886 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 18:48:50,888 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 18:48:50,889 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 18:48:50,894 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 18:48:50,894 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 18:48:50,894 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 18:48:50,932 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 18:48:52,699 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 18:48:53,237 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 18:48:53,237 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 18:48:58,775 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 18:48:58,775 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 18:48:58,776 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 18:48:58,776 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 18:48:58,777 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 19:03:50,942 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/c1hsd94r
+2024-03-15 19:03:50,943 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 19:03:50,943 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 19:03:50,943 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 19:03:55,997 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 19:03:55,998 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 19:03:56,005 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 19:04:00,846 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 19:04:00,846 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 19:04:00,846 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 19:04:00,847 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 19:04:00,847 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 19:04:00,847 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 19:04:00,847 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 19:04:00,847 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_190400-rxpoe3gr\logs\debug.log
+2024-03-15 19:04:00,848 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_190400-rxpoe3gr\logs\debug-internal.log
+2024-03-15 19:04:00,848 INFO    MainThread:15036 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019A7F4C9F90>
+2024-03-15 19:04:00,848 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 19:04:00,848 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 19:04:00,848 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 19:04:00,848 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 19:04:00,851 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 19:04:00,851 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 19:04:00,856 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 19:04:00,856 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 19:04:00,856 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 19:04:00,894 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 19:04:01,689 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 19:04:02,228 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 19:04:02,228 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 19:04:07,624 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 19:04:07,624 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 19:04:07,624 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 19:04:07,624 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 19:04:07,625 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 19:33:48,300 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/rxpoe3gr
+2024-03-15 19:33:48,300 INFO    MainThread:15036 [jupyter.py:save_history():445] not saving jupyter history
+2024-03-15 19:33:48,300 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 19:33:48,300 INFO    MainThread:15036 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2024-03-15 19:33:48,300 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 19:33:48,302 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 19:33:48,302 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 19:33:55,734 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 19:33:55,734 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 19:33:55,740 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 19:34:36,229 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 19:34:36,229 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 19:34:36,229 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 19:34:36,229 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 19:34:36,229 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 19:34:36,229 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 19:34:36,230 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 19:34:36,231 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_193436-1mbxndu4\logs\debug.log
+2024-03-15 19:34:36,231 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_193436-1mbxndu4\logs\debug-internal.log
+2024-03-15 19:34:36,231 INFO    MainThread:15036 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019A04C4F4D0>
+2024-03-15 19:34:36,231 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 19:34:36,231 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 19:34:36,231 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 19:34:36,231 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 19:34:36,233 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 19:34:36,234 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 19:34:36,238 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 19:34:36,238 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 19:34:36,238 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 19:34:36,286 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 19:34:37,133 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 19:34:37,836 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 19:34:37,837 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 19:34:43,234 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 19:34:43,234 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 19:34:43,234 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 19:34:43,234 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 19:34:43,235 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 19:36:41,567 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 19:36:41,567 INFO    MainThread:15036 [wandb_init.py:_pause_backend():437] pausing backend
+2024-03-15 19:39:04,179 INFO    MainThread:15036 [wandb_init.py:_resume_backend():442] resuming backend
+2024-03-15 19:39:04,189 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 19:39:04,189 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 19:39:04,189 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 19:39:04,189 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 19:39:04,189 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 19:39:04,189 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 19:39:04,189 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 19:39:04,190 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_193904-l5d6yrpt\logs\debug.log
+2024-03-15 19:39:04,190 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_193904-l5d6yrpt\logs\debug-internal.log
+2024-03-15 19:39:04,190 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 19:39:04,190 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 19:39:04,190 INFO    MainThread:15036 [wandb_init.py:init():591] re-initializing run, found existing run on stack: 1mbxndu4
+2024-03-15 19:39:04,192 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/1mbxndu4
+2024-03-15 19:39:04,193 INFO    MainThread:15036 [jupyter.py:save_history():445] not saving jupyter history
+2024-03-15 19:39:04,193 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 19:39:04,193 INFO    MainThread:15036 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2024-03-15 19:39:04,193 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 19:39:04,193 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 19:39:04,193 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 19:39:12,717 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 19:39:12,717 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 19:39:12,723 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 19:39:12,765 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 19:39:12,765 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 19:39:12,767 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 19:39:12,768 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 19:39:12,772 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 19:39:12,772 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 19:39:12,772 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 19:39:12,810 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 19:39:14,659 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 19:39:15,205 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 19:39:15,205 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 19:39:20,369 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 19:39:20,369 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 19:39:20,369 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 19:39:20,369 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 19:39:20,370 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 19:57:06,620 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 19:57:06,620 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 19:57:06,621 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 19:57:06,621 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 19:57:06,621 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 19:57:06,621 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 19:57:06,621 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 19:57:06,621 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_195706-klcy4c89\logs\debug.log
+2024-03-15 19:57:06,622 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_195706-klcy4c89\logs\debug-internal.log
+2024-03-15 19:57:06,622 INFO    MainThread:15036 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019A0990D750>
+2024-03-15 19:57:06,622 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 19:57:06,622 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 19:57:06,622 INFO    MainThread:15036 [wandb_init.py:init():591] re-initializing run, found existing run on stack: l5d6yrpt
+2024-03-15 19:57:06,624 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/l5d6yrpt
+2024-03-15 19:57:06,624 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 19:57:06,624 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 19:57:06,624 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 19:57:17,814 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 19:57:17,814 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 19:57:17,831 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 19:57:18,349 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 19:57:18,349 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 19:57:18,352 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 19:57:18,353 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 19:57:18,359 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 19:57:18,359 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 19:57:18,359 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 19:57:18,400 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 19:57:19,707 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 19:57:20,267 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 19:57:20,269 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 19:57:22,994 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 19:57:22,994 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 19:57:22,995 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 19:57:22,995 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 19:57:22,995 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 19:57:30,174 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 19:57:30,175 INFO    MainThread:15036 [wandb_init.py:_pause_backend():437] pausing backend
+2024-03-15 20:06:34,196 INFO    MainThread:15036 [wandb_init.py:_resume_backend():442] resuming backend
+2024-03-15 20:06:34,206 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 20:06:34,207 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 20:06:34,207 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 20:06:34,207 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 20:06:34,207 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 20:06:34,207 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 20:06:34,207 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 20:06:34,208 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_200634-t9wotqaj\logs\debug.log
+2024-03-15 20:06:34,208 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_200634-t9wotqaj\logs\debug-internal.log
+2024-03-15 20:06:34,208 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 20:06:34,208 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 20:06:34,208 INFO    MainThread:15036 [wandb_init.py:init():591] re-initializing run, found existing run on stack: klcy4c89
+2024-03-15 20:06:34,210 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/klcy4c89
+2024-03-15 20:06:34,210 INFO    MainThread:15036 [jupyter.py:save_history():445] not saving jupyter history
+2024-03-15 20:06:34,210 INFO    MainThread:15036 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-15 20:06:34,210 INFO    MainThread:15036 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2024-03-15 20:06:34,210 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 20:06:34,211 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 20:06:34,211 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 20:06:43,810 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-15 20:06:43,810 INFO    MainThread:15036 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-15 20:06:43,814 INFO    MainThread:15036 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-15 20:06:43,855 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 20:06:43,855 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 20:06:43,857 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 20:06:43,859 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 20:06:43,863 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 20:06:43,864 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 20:06:43,864 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 20:06:43,911 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 20:06:45,626 INFO    MainThread:15036 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-15 20:06:46,139 INFO    MainThread:15036 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-15 20:06:46,141 INFO    MainThread:15036 [wandb_init.py:init():804] starting run threads in backend
+2024-03-15 20:06:49,140 INFO    MainThread:15036 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-15 20:06:49,140 INFO    MainThread:15036 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-15 20:06:49,140 INFO    MainThread:15036 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-15 20:06:49,140 INFO    MainThread:15036 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-15 20:06:49,141 INFO    MainThread:15036 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-15 20:11:46,116 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 20:11:46,117 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 20:11:46,117 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 20:11:46,117 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 20:11:46,117 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 20:11:46,117 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 20:11:46,117 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 20:11:46,118 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_201146-56v8yxtf\logs\debug.log
+2024-03-15 20:11:46,118 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_201146-56v8yxtf\logs\debug-internal.log
+2024-03-15 20:11:46,118 INFO    MainThread:15036 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019A08CAC4D0>
+2024-03-15 20:11:46,118 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 20:11:46,118 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 20:11:46,118 INFO    MainThread:15036 [wandb_init.py:init():591] re-initializing run, found existing run on stack: t9wotqaj
+2024-03-15 20:11:46,120 INFO    MainThread:15036 [wandb_run.py:_finish():1970] finishing run lorebaia/DLA Assigment 1/t9wotqaj
+2024-03-15 20:11:46,121 INFO    MainThread:15036 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-15 20:11:46,121 INFO    MainThread:15036 [wandb_run.py:_restore():2193] restore
+2024-03-15 20:11:46,121 INFO    MainThread:15036 [wandb_run.py:_restore():2199] restore done
+2024-03-15 20:13:06,772 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 20:13:06,772 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 20:13:06,774 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 20:13:06,775 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 20:13:06,778 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 20:13:06,778 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 20:13:06,778 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 20:13:06,815 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 20:13:41,028 WARNING MainThread:15036 [wandb_init.py:init():1198] interrupted
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 756, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-03-15 20:13:43,893 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 20:13:43,893 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 20:13:43,893 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 20:13:43,893 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 20:13:43,893 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 20:13:43,893 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 20:13:43,894 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 20:13:43,894 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_201343-pk5hv5qd\logs\debug.log
+2024-03-15 20:13:43,894 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_201343-pk5hv5qd\logs\debug-internal.log
+2024-03-15 20:13:43,894 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 20:13:43,894 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 20:13:43,895 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 20:13:43,895 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 20:13:43,897 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 20:13:43,897 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 20:13:43,901 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 20:13:43,901 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 20:13:43,901 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 20:13:44,325 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 20:13:47,364 WARNING MainThread:15036 [wandb_init.py:init():1198] interrupted
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 756, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-03-15 20:13:48,283 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 20:13:48,283 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 20:13:48,283 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 20:13:48,283 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 20:13:48,283 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 20:13:48,283 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 20:13:48,284 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 20:13:48,284 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_201348-10fg52uo\logs\debug.log
+2024-03-15 20:13:48,284 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_201348-10fg52uo\logs\debug-internal.log
+2024-03-15 20:13:48,285 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 20:13:48,285 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 20:13:48,285 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 20:13:48,285 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 20:13:48,288 INFO    MainThread:15036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-15 20:13:48,288 INFO    MainThread:15036 [wandb_init.py:init():628] backend started and connected
+2024-03-15 20:13:48,292 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-15 20:13:48,292 INFO    MainThread:15036 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-15 20:13:48,292 INFO    MainThread:15036 [wandb_init.py:init():720] updated telemetry
+2024-03-15 20:13:48,329 INFO    MainThread:15036 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 20:14:04,304 WARNING MsgRouterThr:15036 [router.py:message_loop():77] message_loop has been closed
+2024-03-15 20:14:04,304 WARNING MsgRouterThr:15036 [router.py:message_loop():77] message_loop has been closed
+2024-03-15 20:14:04,304 WARNING MsgRouterThr:15036 [router.py:message_loop():77] message_loop has been closed
+2024-03-15 20:14:04,304 WARNING MsgRouterThr:15036 [router.py:message_loop():77] message_loop has been closed
+2024-03-15 20:14:08,653 ERROR   MainThread:15036 [wandb_init.py:init():1194] transport failed
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 756, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 281, in wait
+    raise MailboxError("transport failed")
+wandb.sdk.lib.mailbox.MailboxError: transport failed
+2024-03-15 20:14:25,982 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-15 20:14:25,982 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Configure stats pid to 15036
+2024-03-15 20:14:25,982 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\loreb\.config\wandb\settings
+2024-03-15 20:14:25,983 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\settings
+2024-03-15 20:14:25,983 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 20:14:25,983 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 20:14:25,983 INFO    MainThread:15036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-15 20:14:25,984 INFO    MainThread:15036 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_201425-h6917tgp\logs\debug.log
+2024-03-15 20:14:25,984 INFO    MainThread:15036 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\wandb\run-20240315_201425-h6917tgp\logs\debug-internal.log
+2024-03-15 20:14:25,984 INFO    MainThread:15036 [wandb_init.py:init():566] calling init triggers
+2024-03-15 20:14:25,984 INFO    MainThread:15036 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'MLP', 'dataset': 'MNIST', 'epochs': 100}
+2024-03-15 20:14:25,984 INFO    MainThread:15036 [wandb_init.py:init():616] starting backend
+2024-03-15 20:14:25,985 INFO    MainThread:15036 [wandb_init.py:init():620] setting up manager
+2024-03-15 20:14:26,061 ERROR   MainThread:15036 [wandb_init.py:init():1204] error
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_init.py", line 621, in init
+    manager._inform_init(
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\wandb_manager.py", line 200, in _inform_init
+    svc_iface._svc_inform_init(settings=settings, run_id=run_id)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\service\service_sock.py", line 39, in _svc_inform_init
+    self._sock_client.send(inform_init=inform_init)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 211, in send
+    self.send_server_request(server_req)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto

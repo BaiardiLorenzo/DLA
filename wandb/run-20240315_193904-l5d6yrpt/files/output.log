@@ -1,0 +1,133 @@
+Using device cpu
+ModuleList(
+  (0): Linear(in_features=784, out_features=128, bias=True)
+  (1): Linear(in_features=128, out_features=128, bias=True)
+  (2): Linear(in_features=128, out_features=64, bias=True)
+  (3): Linear(in_features=64, out_features=64, bias=True)
+  (4): Linear(in_features=64, out_features=10, bias=True)
+)
+
+
+
+Training epoch 0: 100%|██████████| 430/430 [00:14<00:00, 28.94it/s]
+
+
+
+
+
+Training epoch 1: 100%|██████████| 430/430 [00:13<00:00, 30.86it/s]
+
+
+Training epoch 2: 100%|██████████| 430/430 [00:14<00:00, 29.32it/s]
+
+
+
+Training epoch 3: 100%|██████████| 430/430 [00:14<00:00, 29.67it/s]
+
+
+
+
+
+
+
+
+
+
+
+Training epoch 4: 100%|██████████| 430/430 [00:41<00:00, 10.43it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epoch 5: 100%|██████████| 430/430 [01:00<00:00,  7.06it/s]
+
+
+
+
+Training epoch 6: 100%|██████████| 430/430 [00:18<00:00, 23.48it/s]
+
+
+
+
+
+
+
+Training epoch 7: 100%|██████████| 430/430 [00:22<00:00, 19.46it/s]
+
+
+
+
+
+
+
+
+
+
+
+Training epoch 8: 100%|██████████| 430/430 [00:30<00:00, 13.89it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+Training epoch 9: 100%|██████████| 430/430 [00:34<00:00, 12.61it/s]
+
+
+
+
+
+
+
+
+
+Training epoch 10: 100%|██████████| 430/430 [00:31<00:00, 13.84it/s]
+
+
+
+
+
+
+
+Training epoch 11:  79%|███████▉  | 339/430 [00:20<00:05, 16.21it/s]
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data\cifar-10-python.tar.gz
+
+
+
+
+
+
+ 60%|██████    | 102367232/170498071 [00:12<00:07, 8527295.89it/s]
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x0000019A774DE980>
+Traceback (most recent call last):
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\torch\utils\data\dataloader.py", line 1479, in __del__
+    self._shutdown_workers()
+  File "c:\src\anaconda3\envs\DLA\Lib\site-packages\torch\utils\data\dataloader.py", line 1437, in _shutdown_workers
+    if self._persistent_workers or self._workers_status[worker_id]:
+                                   ^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_MultiProcessingDataLoaderIter' object has no attribute '_workers_status'
