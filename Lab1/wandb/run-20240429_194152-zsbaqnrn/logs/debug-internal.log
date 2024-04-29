@@ -1,0 +1,220 @@
+2024-04-29 19:41:59,046 INFO    StreamThr :12804 [internal.py:wandb_internal():86] W&B internal server running at pid: 12804, started at: 2024-04-29 19:41:59.046352
+2024-04-29 19:41:59,046 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status
+2024-04-29 19:41:59,061 INFO    WriterThread:12804 [datastore.py:open_for_write():87] open: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\run-zsbaqnrn.wandb
+2024-04-29 19:41:59,061 DEBUG   SenderThread:12804 [sender.py:send():379] send: header
+2024-04-29 19:41:59,061 DEBUG   SenderThread:12804 [sender.py:send():379] send: run
+2024-04-29 19:42:00,111 INFO    SenderThread:12804 [dir_watcher.py:__init__():211] watching files in: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files
+2024-04-29 19:42:00,111 INFO    SenderThread:12804 [sender.py:_start_run_threads():1124] run started: zsbaqnrn with start time 1714412518.70422
+2024-04-29 19:42:00,144 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: check_version
+2024-04-29 19:42:00,150 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: check_version
+2024-04-29 19:42:00,810 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: run_start
+2024-04-29 19:42:00,824 DEBUG   HandlerThread:12804 [system_info.py:__init__():26] System info init
+2024-04-29 19:42:00,824 DEBUG   HandlerThread:12804 [system_info.py:__init__():41] System info init done
+2024-04-29 19:42:00,824 INFO    HandlerThread:12804 [system_monitor.py:start():194] Starting system monitor
+2024-04-29 19:42:00,824 INFO    SystemMonitor:12804 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-29 19:42:00,824 INFO    HandlerThread:12804 [system_monitor.py:probe():214] Collecting system info
+2024-04-29 19:42:00,844 DEBUG   HandlerThread:12804 [system_info.py:probe():150] Probing system
+2024-04-29 19:42:00,844 INFO    SystemMonitor:12804 [interfaces.py:start():190] Started cpu monitoring
+2024-04-29 19:42:00,844 INFO    SystemMonitor:12804 [interfaces.py:start():190] Started disk monitoring
+2024-04-29 19:42:00,879 INFO    SystemMonitor:12804 [interfaces.py:start():190] Started memory monitoring
+2024-04-29 19:42:00,901 INFO    SystemMonitor:12804 [interfaces.py:start():190] Started network monitoring
+2024-04-29 19:42:00,901 DEBUG   HandlerThread:12804 [system_info.py:_probe_git():135] Probing git
+2024-04-29 19:42:01,085 DEBUG   HandlerThread:12804 [system_info.py:_probe_git():143] Probing git done
+2024-04-29 19:42:01,085 DEBUG   HandlerThread:12804 [system_info.py:probe():198] Probing system done
+2024-04-29 19:42:01,085 DEBUG   HandlerThread:12804 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.9', 'heartbeatAt': '2024-04-29T17:42:00.844104', 'startedAt': '2024-04-29T17:41:52.234968', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/BaiardiLorenzo/DLA.git', 'commit': 'c16143da8f04d1f05e5b216754b79e58ba6e4b54'}, 'email': 'lorebaia@gmail.com', 'root': 'C:/Users/loreb/Documents/IntellijProjects/PycharmProjects/DLA', 'host': 'Ametista', 'username': 'loreb', 'executable': 'c:\\Users\\loreb\\miniconda3\\envs\\DLA\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2200.0, 'min': 0.0, 'max': 2200.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 0.0, 'max': 2200.0}], 'disk': {'/': {'total': 456.59276962280273, 'used': 109.19031143188477}}, 'memory': {'total': 15.570247650146484}}
+2024-04-29 19:42:01,085 INFO    HandlerThread:12804 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-29 19:42:01,085 INFO    HandlerThread:12804 [system_monitor.py:probe():227] Publishing system info
+2024-04-29 19:42:01,085 DEBUG   HandlerThread:12804 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-29 19:42:01,126 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\conda-environment.yaml
+2024-04-29 19:42:06,866 DEBUG   HandlerThread:12804 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-29 19:42:06,875 INFO    HandlerThread:12804 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-29 19:42:06,875 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:06,878 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-29 19:42:06,878 DEBUG   SenderThread:12804 [sender.py:send():379] send: files
+2024-04-29 19:42:06,878 INFO    SenderThread:12804 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-29 19:42:07,159 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\conda-environment.yaml
+2024-04-29 19:42:07,163 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\wandb-metadata.json
+2024-04-29 19:42:07,392 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-29 19:42:07,392 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: python_packages
+2024-04-29 19:42:07,392 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 19:42:07,392 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:42:07,392 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 19:42:07,579 DEBUG   SenderThread:12804 [sender.py:send():379] send: telemetry
+2024-04-29 19:42:08,093 INFO    wandb-upload_0:12804 [upload_job.py:push():131] Uploaded file C:\Users\loreb\AppData\Local\Temp\tmpaagqiv_1wandb\2queaijh-wandb-metadata.json
+2024-04-29 19:42:08,166 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\requirements.txt
+2024-04-29 19:42:08,166 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\output.log
+2024-04-29 19:42:10,184 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\output.log
+2024-04-29 19:42:10,617 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:15,657 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:21,474 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:22,300 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\output.log
+2024-04-29 19:42:22,411 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:42:22,411 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 19:42:22,411 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 19:42:26,675 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:31,746 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:32,381 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\config.yaml
+2024-04-29 19:42:36,992 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:37,425 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:42:37,438 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 19:42:37,442 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 19:42:42,757 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:47,800 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:52,431 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:42:52,451 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 19:42:52,451 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 19:42:53,771 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:42:58,835 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:43:00,919 DEBUG   SystemMonitor:12804 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-29 19:43:00,919 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 19:43:03,941 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:43:07,434 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:43:07,463 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 19:43:07,463 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 19:43:09,801 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:43:14,843 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:43:19,896 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:43:22,451 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:43:22,467 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 19:43:22,467 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 19:43:25,856 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:43:30,893 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:43:30,928 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 19:43:34,398 DEBUG   SenderThread:12804 [sender.py:send():379] send: telemetry
+2024-04-29 19:43:34,403 DEBUG   SenderThread:12804 [sender.py:send():379] send: exit
+2024-04-29 19:43:34,403 INFO    SenderThread:12804 [sender.py:send_exit():586] handling exit code: 0
+2024-04-29 19:43:34,403 INFO    SenderThread:12804 [sender.py:send_exit():588] handling runtime: 93
+2024-04-29 19:43:34,403 INFO    SenderThread:12804 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 19:43:34,403 INFO    SenderThread:12804 [sender.py:send_exit():594] send defer
+2024-04-29 19:43:34,403 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:34,403 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-29 19:43:34,403 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:34,403 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-29 19:43:34,403 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 1
+2024-04-29 19:43:34,403 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:34,403 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-29 19:43:34,403 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:34,403 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-29 19:43:34,403 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 2
+2024-04-29 19:43:34,403 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:34,403 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-29 19:43:34,403 INFO    HandlerThread:12804 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-29 19:43:34,403 INFO    HandlerThread:12804 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-29 19:43:34,403 INFO    HandlerThread:12804 [interfaces.py:finish():202] Joined disk monitor
+2024-04-29 19:43:34,403 DEBUG   SystemMonitor:12804 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-29 19:43:34,403 INFO    HandlerThread:12804 [interfaces.py:finish():202] Joined memory monitor
+2024-04-29 19:43:34,403 DEBUG   SystemMonitor:12804 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-29 19:43:34,403 INFO    HandlerThread:12804 [interfaces.py:finish():202] Joined network monitor
+2024-04-29 19:43:34,414 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 3
+2024-04-29 19:43:34,414 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 19:43:34,414 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:34,414 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-29 19:43:34,414 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 4
+2024-04-29 19:43:34,414 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:34,414 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-29 19:43:34,414 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 5
+2024-04-29 19:43:34,414 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:34,414 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-29 19:43:34,414 DEBUG   SenderThread:12804 [sender.py:send():379] send: summary
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 19:43:34,414 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-29 19:43:34,414 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 6
+2024-04-29 19:43:34,414 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:34,420 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-29 19:43:34,420 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:34,420 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-29 19:43:34,420 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:43:34,721 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 7
+2024-04-29 19:43:34,724 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:34,724 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-29 19:43:34,724 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:34,724 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-29 19:43:35,197 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\config.yaml
+2024-04-29 19:43:35,197 INFO    Thread-31 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\wandb-summary.json
+2024-04-29 19:43:35,404 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 19:43:35,721 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 8
+2024-04-29 19:43:35,721 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 19:43:35,721 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:35,721 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-29 19:43:35,721 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:35,721 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-29 19:43:35,721 INFO    SenderThread:12804 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-29 19:43:35,721 INFO    SenderThread:12804 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-29 19:43:35,721 INFO    SenderThread:12804 [job_builder.py:_get_program_relpath():473] run is notebook based run
+2024-04-29 19:43:35,721 WARNING SenderThread:12804 [job_builder.py:_log_if_verbose():210] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-04-29 19:43:35,721 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 9
+2024-04-29 19:43:35,721 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:35,721 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-29 19:43:35,728 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:35,728 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-29 19:43:35,728 INFO    SenderThread:12804 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-29 19:43:36,215 INFO    SenderThread:12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\output.log
+2024-04-29 19:43:36,215 INFO    SenderThread:12804 [dir_watcher.py:finish():388] scan: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files
+2024-04-29 19:43:36,215 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\conda-environment.yaml conda-environment.yaml
+2024-04-29 19:43:36,220 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\config.yaml config.yaml
+2024-04-29 19:43:36,220 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\output.log output.log
+2024-04-29 19:43:36,228 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\requirements.txt requirements.txt
+2024-04-29 19:43:36,236 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\wandb-metadata.json wandb-metadata.json
+2024-04-29 19:43:36,236 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\wandb-summary.json wandb-summary.json
+2024-04-29 19:43:36,243 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 10
+2024-04-29 19:43:36,243 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:36,243 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-29 19:43:36,251 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:36,251 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-29 19:43:36,251 INFO    SenderThread:12804 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-29 19:43:36,416 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 19:43:36,416 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 19:43:36,752 INFO    wandb-upload_0:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\conda-environment.yaml
+2024-04-29 19:43:37,426 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 19:43:37,426 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 19:43:37,480 INFO    wandb-upload_1:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\config.yaml
+2024-04-29 19:43:38,215 INFO    wandb-upload_2:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\output.log
+2024-04-29 19:43:38,215 INFO    wandb-upload_4:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\wandb-summary.json
+2024-04-29 19:43:38,215 INFO    wandb-upload_3:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\files\requirements.txt
+2024-04-29 19:43:38,422 INFO    Thread-30 (_thread_body):12804 [sender.py:transition_state():614] send defer: 11
+2024-04-29 19:43:38,422 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:38,422 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-29 19:43:38,422 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:38,422 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-29 19:43:38,422 INFO    SenderThread:12804 [file_pusher.py:join():178] waiting for file pusher
+2024-04-29 19:43:38,422 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 12
+2024-04-29 19:43:38,422 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:38,422 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-29 19:43:38,422 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:38,422 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-29 19:43:38,422 INFO    SenderThread:12804 [file_stream.py:finish():614] file stream finish called
+2024-04-29 19:43:38,431 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 19:43:38,988 INFO    SenderThread:12804 [file_stream.py:finish():618] file stream finish is done
+2024-04-29 19:43:38,988 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 13
+2024-04-29 19:43:38,988 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 19:43:38,988 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:38,988 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-29 19:43:38,997 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:38,997 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-29 19:43:38,997 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 14
+2024-04-29 19:43:38,997 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 19:43:38,997 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-29 19:43:38,997 DEBUG   SenderThread:12804 [sender.py:send():379] send: final
+2024-04-29 19:43:38,997 DEBUG   SenderThread:12804 [sender.py:send():379] send: footer
+2024-04-29 19:43:38,997 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 19:43:38,997 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-29 19:43:38,997 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 19:43:38,997 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 19:43:38,997 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:43:38,997 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: server_info
+2024-04-29 19:43:38,997 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-29 19:43:39,010 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-29 19:43:39,010 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: server_info
+2024-04-29 19:43:39,222 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-29 19:43:39,222 INFO    HandlerThread:12804 [handler.py:finish():866] shutting down handler
+2024-04-29 19:43:40,069 INFO    WriterThread:12804 [datastore.py:close():296] close: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_194152-zsbaqnrn\run-zsbaqnrn.wandb
+2024-04-29 19:43:40,230 INFO    SenderThread:12804 [sender.py:finish():1546] shutting down sender
+2024-04-29 19:43:40,231 INFO    SenderThread:12804 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-29 19:43:40,231 INFO    SenderThread:12804 [file_pusher.py:join():178] waiting for file pusher

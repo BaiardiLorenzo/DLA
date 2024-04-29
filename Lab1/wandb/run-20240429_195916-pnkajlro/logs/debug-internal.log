@@ -1,0 +1,528 @@
+2024-04-29 19:59:23,448 INFO    StreamThr :12804 [internal.py:wandb_internal():86] W&B internal server running at pid: 12804, started at: 2024-04-29 19:59:23.445968
+2024-04-29 19:59:23,448 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status
+2024-04-29 19:59:23,456 INFO    WriterThread:12804 [datastore.py:open_for_write():87] open: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\run-pnkajlro.wandb
+2024-04-29 19:59:23,462 DEBUG   SenderThread:12804 [sender.py:send():379] send: header
+2024-04-29 19:59:23,465 DEBUG   SenderThread:12804 [sender.py:send():379] send: run
+2024-04-29 19:59:24,590 INFO    SenderThread:12804 [dir_watcher.py:__init__():211] watching files in: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files
+2024-04-29 19:59:24,590 INFO    SenderThread:12804 [sender.py:_start_run_threads():1124] run started: pnkajlro with start time 1714413563.110625
+2024-04-29 19:59:24,621 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: check_version
+2024-04-29 19:59:24,621 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: check_version
+2024-04-29 19:59:25,414 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: run_start
+2024-04-29 19:59:25,438 DEBUG   HandlerThread:12804 [system_info.py:__init__():26] System info init
+2024-04-29 19:59:25,438 DEBUG   HandlerThread:12804 [system_info.py:__init__():41] System info init done
+2024-04-29 19:59:25,438 INFO    HandlerThread:12804 [system_monitor.py:start():194] Starting system monitor
+2024-04-29 19:59:25,438 INFO    SystemMonitor:12804 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-29 19:59:25,438 INFO    HandlerThread:12804 [system_monitor.py:probe():214] Collecting system info
+2024-04-29 19:59:25,444 INFO    SystemMonitor:12804 [interfaces.py:start():190] Started cpu monitoring
+2024-04-29 19:59:25,460 INFO    SystemMonitor:12804 [interfaces.py:start():190] Started disk monitoring
+2024-04-29 19:59:25,460 DEBUG   HandlerThread:12804 [system_info.py:probe():150] Probing system
+2024-04-29 19:59:25,479 INFO    SystemMonitor:12804 [interfaces.py:start():190] Started memory monitoring
+2024-04-29 19:59:25,492 INFO    SystemMonitor:12804 [interfaces.py:start():190] Started network monitoring
+2024-04-29 19:59:25,492 DEBUG   HandlerThread:12804 [system_info.py:_probe_git():135] Probing git
+2024-04-29 19:59:25,668 DEBUG   HandlerThread:12804 [system_info.py:_probe_git():143] Probing git done
+2024-04-29 19:59:25,668 DEBUG   HandlerThread:12804 [system_info.py:probe():198] Probing system done
+2024-04-29 19:59:25,668 DEBUG   HandlerThread:12804 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.9', 'heartbeatAt': '2024-04-29T17:59:25.479831', 'startedAt': '2024-04-29T17:59:16.054411', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/BaiardiLorenzo/DLA.git', 'commit': 'c16143da8f04d1f05e5b216754b79e58ba6e4b54'}, 'email': 'lorebaia@gmail.com', 'root': 'C:/Users/loreb/Documents/IntellijProjects/PycharmProjects/DLA', 'host': 'Ametista', 'username': 'loreb', 'executable': 'c:\\Users\\loreb\\miniconda3\\envs\\DLA\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2200.0, 'min': 0.0, 'max': 2200.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 0.0, 'max': 2200.0}], 'disk': {'/': {'total': 456.59276962280273, 'used': 109.19116973876953}}, 'memory': {'total': 15.570247650146484}}
+2024-04-29 19:59:25,668 INFO    HandlerThread:12804 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-29 19:59:25,668 INFO    HandlerThread:12804 [system_monitor.py:probe():227] Publishing system info
+2024-04-29 19:59:25,668 DEBUG   HandlerThread:12804 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-29 19:59:26,598 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\conda-environment.yaml
+2024-04-29 19:59:31,212 DEBUG   HandlerThread:12804 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-29 19:59:31,221 INFO    HandlerThread:12804 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-29 19:59:31,221 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:59:31,221 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-29 19:59:31,221 DEBUG   SenderThread:12804 [sender.py:send():379] send: files
+2024-04-29 19:59:31,221 INFO    SenderThread:12804 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-29 19:59:31,660 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\conda-environment.yaml
+2024-04-29 19:59:31,660 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\wandb-metadata.json
+2024-04-29 19:59:31,715 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-29 19:59:31,715 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: python_packages
+2024-04-29 19:59:31,716 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 19:59:31,716 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 19:59:31,719 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:59:31,940 DEBUG   SenderThread:12804 [sender.py:send():379] send: telemetry
+2024-04-29 19:59:32,355 INFO    wandb-upload_0:12804 [upload_job.py:push():131] Uploaded file C:\Users\loreb\AppData\Local\Temp\tmpxwvs1q55wandb\corpbdjc-wandb-metadata.json
+2024-04-29 19:59:32,666 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:32,666 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\requirements.txt
+2024-04-29 19:59:34,680 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:34,964 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:59:40,006 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:59:44,765 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:45,971 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:59:46,723 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 19:59:46,723 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 19:59:46,723 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 19:59:46,773 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:48,790 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:50,808 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:51,273 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:59:52,820 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:54,837 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:56,535 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 19:59:56,862 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\config.yaml
+2024-04-29 19:59:56,862 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 19:59:58,883 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:00,905 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:01,740 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:00:01,774 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:00:01,774 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:00:01,961 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:02,923 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:04,942 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:06,969 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:07,252 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:08,983 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:11,003 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:12,416 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:13,138 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:15,180 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:16,752 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:00:16,768 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:00:16,768 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:00:18,040 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:21,335 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:24,020 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:25,496 DEBUG   SystemMonitor:12804 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-29 20:00:25,496 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:00:26,597 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:29,708 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:31,797 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:00:31,797 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:00:31,797 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:00:32,958 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:35,098 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:37,014 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:40,352 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:43,310 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:46,138 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:46,868 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:00:46,868 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:00:46,868 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:00:49,343 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:52,092 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:00:55,373 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:00:55,577 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:00:57,681 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:01,483 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:01,845 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:01:01,845 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:01:01,845 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:01:03,164 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:07,656 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:08,848 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:11,862 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:14,345 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:16,872 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:01:16,872 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:01:16,872 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:01:17,893 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:20,288 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:23,952 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:25,586 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:01:25,586 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:27,980 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:29,988 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:31,439 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:31,887 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:01:31,888 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:01:31,888 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:01:32,006 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:33,022 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:35,044 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:37,057 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:37,220 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:39,073 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:41,090 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:42,824 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:43,110 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:45,137 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:46,891 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:01:46,906 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:01:46,906 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:01:47,155 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:48,226 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:49,172 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:51,192 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:53,210 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:53,978 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:01:55,230 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:55,590 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:01:57,244 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:59,263 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:01:59,496 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:01,288 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:01,892 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:02:01,908 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:02:01,908 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:02:03,309 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:04,980 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:05,330 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:07,348 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:09,364 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:10,623 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:11,388 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:13,410 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:15,449 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:16,333 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:16,896 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:02:16,919 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:02:16,924 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:02:17,497 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:19,514 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:21,526 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:21,882 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:23,546 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:25,568 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:25,599 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:02:27,418 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:27,587 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:29,602 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:31,638 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:31,900 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:02:31,931 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:02:31,931 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:02:32,693 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:33,656 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:35,684 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:37,725 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:37,967 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:39,740 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:41,756 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:43,271 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:43,796 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:45,893 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:46,930 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:02:46,945 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:02:46,945 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:02:48,280 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:50,071 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:53,497 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:02:55,429 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:02:55,602 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:02:58,745 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:01,762 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:01,967 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:03:01,967 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:03:01,967 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:03:04,200 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:08,035 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:09,607 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:15,073 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:16,565 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:17,037 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:03:17,037 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:03:17,037 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:03:19,790 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:21,183 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:25,608 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:03:26,612 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:28,130 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:30,141 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:31,821 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:32,043 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:03:32,043 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:03:32,057 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:03:32,174 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:34,200 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:36,211 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:37,613 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:38,214 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:03:42,696 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:47,061 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:03:47,061 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:03:47,061 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:03:48,332 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:53,379 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:03:55,619 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:03:58,648 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:02,085 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:04:02,085 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:04:02,089 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:04:04,393 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:09,437 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:14,458 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:17,092 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:04:17,100 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:04:17,100 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:04:20,405 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:25,499 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:25,625 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:04:30,673 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:32,101 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:04:32,101 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:04:32,101 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:04:36,418 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:41,465 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:46,476 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:47,111 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:04:47,111 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:04:47,111 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:04:52,366 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:04:55,636 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:04:57,639 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:02,110 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:05:02,114 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:05:02,169 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:05:03,402 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:08,449 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:13,509 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:17,120 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:05:17,120 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:05:17,184 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:05:19,366 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:24,484 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:25,640 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:05:29,686 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:32,141 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:05:32,141 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:05:32,188 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:05:35,422 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:40,475 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:45,543 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:47,156 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:05:47,156 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:05:47,203 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:05:51,481 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:05:55,643 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:05:56,648 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:01,702 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:02,160 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:06:02,160 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:06:02,207 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:06:07,458 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:12,522 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:17,171 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:06:17,171 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:06:17,218 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:06:18,469 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:23,505 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:25,658 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:06:28,667 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:32,176 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:06:32,176 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:06:32,223 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:06:34,420 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:39,474 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:44,510 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:47,192 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:06:47,192 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:06:47,233 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:06:50,478 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:55,514 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:06:55,660 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:07:00,698 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:02,208 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:07:02,208 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:07:02,240 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:07:06,532 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:11,548 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:16,608 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:17,241 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:07:17,241 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:07:17,244 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:07:22,504 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:25,672 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:07:27,684 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:32,259 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:07:32,259 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:07:32,259 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:07:33,514 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:38,550 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:43,646 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:47,262 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:07:47,274 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:07:47,274 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:07:49,583 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:54,630 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:07:55,684 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:07:59,706 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:02,271 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:08:02,287 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:08:02,287 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:08:05,670 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:10,733 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:15,789 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:17,277 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:08:17,310 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:08:17,310 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:08:21,713 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:25,694 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:08:27,709 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:32,288 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:08:32,323 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:08:32,323 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:08:33,629 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:38,669 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:43,724 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:47,304 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:08:47,336 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:08:47,336 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:08:49,686 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:54,736 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:08:55,705 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:09:00,739 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:02,322 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:09:02,354 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:09:02,354 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:09:06,650 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:11,710 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:16,750 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:17,332 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:09:17,363 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:09:17,363 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:09:22,684 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:25,708 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:09:27,730 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:32,342 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:09:32,382 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:09:32,382 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:09:33,692 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:38,781 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:43,799 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:47,346 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:09:47,387 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:09:47,388 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:09:49,694 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:54,749 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:09:55,718 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:09:59,843 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:10:02,347 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:10:02,401 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-29 20:10:02,402 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: stop_status
+2024-04-29 20:10:03,306 DEBUG   SenderThread:12804 [sender.py:send():379] send: telemetry
+2024-04-29 20:10:03,306 DEBUG   SenderThread:12804 [sender.py:send():379] send: exit
+2024-04-29 20:10:03,306 INFO    SenderThread:12804 [sender.py:send_exit():586] handling exit code: 0
+2024-04-29 20:10:03,306 INFO    SenderThread:12804 [sender.py:send_exit():588] handling runtime: 637
+2024-04-29 20:10:03,306 INFO    SenderThread:12804 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 20:10:03,314 INFO    SenderThread:12804 [sender.py:send_exit():594] send defer
+2024-04-29 20:10:03,314 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,314 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-29 20:10:03,314 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,314 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-29 20:10:03,314 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 1
+2024-04-29 20:10:03,314 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,316 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-29 20:10:03,316 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,316 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-29 20:10:03,316 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 2
+2024-04-29 20:10:03,316 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,316 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-29 20:10:03,316 INFO    HandlerThread:12804 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-29 20:10:03,316 DEBUG   SystemMonitor:12804 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-29 20:10:03,316 DEBUG   SystemMonitor:12804 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-29 20:10:03,316 INFO    HandlerThread:12804 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-29 20:10:03,316 INFO    HandlerThread:12804 [interfaces.py:finish():202] Joined disk monitor
+2024-04-29 20:10:03,316 INFO    HandlerThread:12804 [interfaces.py:finish():202] Joined memory monitor
+2024-04-29 20:10:03,316 INFO    HandlerThread:12804 [interfaces.py:finish():202] Joined network monitor
+2024-04-29 20:10:03,316 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,316 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-29 20:10:03,316 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 3
+2024-04-29 20:10:03,316 DEBUG   SenderThread:12804 [sender.py:send():379] send: stats
+2024-04-29 20:10:03,316 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,322 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-29 20:10:03,322 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,322 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-29 20:10:03,322 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 4
+2024-04-29 20:10:03,322 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,322 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-29 20:10:03,322 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,322 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-29 20:10:03,322 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 5
+2024-04-29 20:10:03,322 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,322 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-29 20:10:03,322 DEBUG   SenderThread:12804 [sender.py:send():379] send: summary
+2024-04-29 20:10:03,322 INFO    SenderThread:12804 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-29 20:10:03,322 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,322 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-29 20:10:03,322 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 6
+2024-04-29 20:10:03,322 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,322 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-29 20:10:03,322 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,322 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-29 20:10:03,330 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: status_report
+2024-04-29 20:10:03,556 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 7
+2024-04-29 20:10:03,556 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,556 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-29 20:10:03,556 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,556 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-29 20:10:03,741 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\config.yaml
+2024-04-29 20:10:03,741 INFO    Thread-59 :12804 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\wandb-summary.json
+2024-04-29 20:10:03,981 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 8
+2024-04-29 20:10:03,983 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,983 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-29 20:10:03,984 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,984 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-29 20:10:03,984 INFO    SenderThread:12804 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-29 20:10:03,984 INFO    SenderThread:12804 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-29 20:10:03,984 INFO    SenderThread:12804 [job_builder.py:_get_program_relpath():473] run is notebook based run
+2024-04-29 20:10:03,984 WARNING SenderThread:12804 [job_builder.py:_log_if_verbose():210] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-04-29 20:10:03,984 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 9
+2024-04-29 20:10:03,984 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:03,984 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-29 20:10:03,984 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:03,984 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-29 20:10:03,984 INFO    SenderThread:12804 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-29 20:10:04,315 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 20:10:04,743 INFO    SenderThread:12804 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:10:04,743 INFO    SenderThread:12804 [dir_watcher.py:finish():388] scan: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files
+2024-04-29 20:10:04,743 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\conda-environment.yaml conda-environment.yaml
+2024-04-29 20:10:04,743 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\config.yaml config.yaml
+2024-04-29 20:10:04,743 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log output.log
+2024-04-29 20:10:04,743 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\requirements.txt requirements.txt
+2024-04-29 20:10:04,743 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\wandb-metadata.json wandb-metadata.json
+2024-04-29 20:10:04,759 INFO    SenderThread:12804 [dir_watcher.py:finish():402] scan save: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\wandb-summary.json wandb-summary.json
+2024-04-29 20:10:04,759 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 10
+2024-04-29 20:10:04,759 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 20:10:04,759 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:04,759 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-29 20:10:04,759 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:04,759 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-29 20:10:04,759 INFO    SenderThread:12804 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-29 20:10:05,327 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 20:10:05,327 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 20:10:06,018 INFO    wandb-upload_0:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\conda-environment.yaml
+2024-04-29 20:10:06,339 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 20:10:06,339 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 20:10:06,780 INFO    wandb-upload_1:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\config.yaml
+2024-04-29 20:10:06,786 INFO    wandb-upload_3:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\requirements.txt
+2024-04-29 20:10:06,786 INFO    wandb-upload_4:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\wandb-summary.json
+2024-04-29 20:10:06,794 INFO    wandb-upload_2:12804 [upload_job.py:push():131] Uploaded file c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\files\output.log
+2024-04-29 20:10:07,017 INFO    Thread-58 (_thread_body):12804 [sender.py:transition_state():614] send defer: 11
+2024-04-29 20:10:07,029 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:07,029 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-29 20:10:07,033 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:07,033 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-29 20:10:07,033 INFO    SenderThread:12804 [file_pusher.py:join():178] waiting for file pusher
+2024-04-29 20:10:07,033 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 12
+2024-04-29 20:10:07,033 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:07,033 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-29 20:10:07,033 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:07,033 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-29 20:10:07,033 INFO    SenderThread:12804 [file_stream.py:finish():614] file stream finish called
+2024-04-29 20:10:07,344 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 20:10:07,704 INFO    SenderThread:12804 [file_stream.py:finish():618] file stream finish is done
+2024-04-29 20:10:07,704 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 13
+2024-04-29 20:10:07,704 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 20:10:07,704 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:07,704 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-29 20:10:07,709 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:07,709 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-29 20:10:07,709 INFO    SenderThread:12804 [sender.py:transition_state():614] send defer: 14
+2024-04-29 20:10:07,709 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: defer
+2024-04-29 20:10:07,709 INFO    HandlerThread:12804 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-29 20:10:07,709 DEBUG   SenderThread:12804 [sender.py:send():379] send: final
+2024-04-29 20:10:07,709 DEBUG   SenderThread:12804 [sender.py:send():379] send: footer
+2024-04-29 20:10:07,709 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: defer
+2024-04-29 20:10:07,709 INFO    SenderThread:12804 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-29 20:10:07,709 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-29 20:10:07,716 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: poll_exit
+2024-04-29 20:10:07,718 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-29 20:10:07,722 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: server_info
+2024-04-29 20:10:07,722 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-29 20:10:07,726 DEBUG   SenderThread:12804 [sender.py:send_request():406] send_request: server_info
+2024-04-29 20:10:07,729 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-29 20:10:07,901 DEBUG   HandlerThread:12804 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-29 20:10:07,904 INFO    HandlerThread:12804 [handler.py:finish():866] shutting down handler
+2024-04-29 20:10:08,746 INFO    WriterThread:12804 [datastore.py:close():296] close: c:\Users\loreb\Documents\IntellijProjects\PycharmProjects\DLA\Lab1\wandb\run-20240429_195916-pnkajlro\run-pnkajlro.wandb
+2024-04-29 20:10:08,904 INFO    SenderThread:12804 [sender.py:finish():1546] shutting down sender
+2024-04-29 20:10:08,905 INFO    SenderThread:12804 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-29 20:10:08,905 INFO    SenderThread:12804 [file_pusher.py:join():178] waiting for file pusher

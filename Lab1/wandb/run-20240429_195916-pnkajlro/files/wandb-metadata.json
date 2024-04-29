@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.11.9",
+    "heartbeatAt": "2024-04-29T17:59:25.479831",
+    "startedAt": "2024-04-29T17:59:16.054411",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/BaiardiLorenzo/DLA.git",
+        "commit": "c16143da8f04d1f05e5b216754b79e58ba6e4b54"
+    },
+    "email": "lorebaia@gmail.com",
+    "root": "C:/Users/loreb/Documents/IntellijProjects/PycharmProjects/DLA",
+    "host": "Ametista",
+    "username": "loreb",
+    "executable": "c:\\Users\\loreb\\miniconda3\\envs\\DLA\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2200.0,
+        "min": 0.0,
+        "max": 2200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.0,
+            "min": 0.0,
+            "max": 2200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 456.59276962280273,
+            "used": 109.19116973876953
+        }
+    },
+    "memory": {
+        "total": 15.570247650146484
+    }
+}
