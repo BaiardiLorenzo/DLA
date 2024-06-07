@@ -7,7 +7,6 @@
 - `wandb`: Folder with the weights and biases files generated during the training of the models.
 - `images`: Folder with the images of the results of the exercises.
 - `model_states`: Folder with the model states generated during the training of the models.
-- `data`: Folder with the data used in the laboratory.
 
 ## 1. Introduction
 

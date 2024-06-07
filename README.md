@@ -8,6 +8,7 @@ This repository contains the labs for the course "Deep Learning Applications" at
 - `lab2`: Natural Language Processing (NLP).
 - `lab3`: Deep Reinforcement Learning (DRL).
 - `lab4`: OOD Detection and Adversarial Robustness.
+- `data`: Folder with the datatasets used in the laboratory.
 - Every folder contains a `README.md` file with the results and the code of the lab.
 - requirements.txt: contains the required libraries to run all the labs.
 
