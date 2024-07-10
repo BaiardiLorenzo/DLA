@@ -61,3 +61,8 @@ The results are saved on the Weights and Biases platform.
 ### Plots
 ![Results: DistilBERT for AI2_ARC](images/results_exercise2_arc.png)
 
+## 2.3. Exercise 3
+
+For the third exercise, it is necessary to implement a Text Retrieval Neural Network using the DistilBERT model. In this case the model is trained to retrieve the most similar text to a given query. For the retrieval task, I use a cosine similarity function to compare the embeddings of the query and the text.
+
+*** TO BE COMPLETED ***
