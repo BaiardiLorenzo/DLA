@@ -10,7 +10,7 @@
 
 # 1. Introduction
 
-This laboratory is focused on Convolutional Neural Networks (CNNs). The main goal is to understand the basic concepts of CNNs and how to implement them using the PyTorch library. The laboratory is divided into two parts. In the first part, we have the base file 'Lab1-CNNs.ipynb' with the instructions and the code to be completed by the student. In the second part, we have the file 'Lab1-CNNs Exercise.ipynb' with the exercises to be completed by the student.
+This laboratory is focused on Convolutional Neural Networks (CNNs). The main goal is to understand the basic concepts of CNNs and how to implement them using the PyTorch library. The laboratory is divided into two parts. In the first part, we have the base file 'Lab1-CNNs.ipynb' with the instructions and the code to be completed by the student. In the second part, we have the file 'Lab1-CNNs-Exercise2.ipynb' with the exercises to be completed by the student.
 
 # 2. Exercises
 
