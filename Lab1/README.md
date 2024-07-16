@@ -36,7 +36,11 @@ The results of the models are saved on the weights and biases platform.
 
 ## 2.2. Exercise 2
 
-For the second exercise, I have implemented a Fully Convolutional Network (FCN) using the ResNet18 model. The FCN model is used for image segmentation on the MNIST dataset.
+For the second exercise, I have implemented a Fully Convolutional Network (FCN) using the ResNet18 model. 
+
+![FCN Model](images/fcn_model.jpg)
+
+The FCN model is used for image segmentation on the MNIST dataset.
 For the ground truth of the image, I convert the image to a binary image, where the number pixel values the label and the background pixel values another class (background label).
 
 For the results of the model, I have plotted the input image, the result of the model, and the comparison between the ground truth and the result of the model.
@@ -51,6 +55,9 @@ I have implemented the Grad-CAM algorithm to visualize the activations of the ne
 The results are not very clear, this is because the images are very small.
 
 ### GradCAM
+
+![GradCAM](images/grad-cam_model.png)
+
 - Compute the Gradient of the Score with Respect to Feature Maps:
 
     Let y^c be the score for class c, and let A^k represent the feature maps of the k-th convolutional layer. The gradient of y^c with respect to A^k is given by:
@@ -61,7 +68,9 @@ The results are not very clear, this is because the images are very small.
 
     To get the weights alpha^k_c for each feature map, you average the gradients over all spatial locations:
 
+
     $$ \alpha^k_c = \frac{1}{Z} \sum_{i,j} \frac{\partial y^c}{\partial A^k_{ij}} $$
+
 
     where Z is the number of spatial locations, and A^k_{ij} represents the value of the k -th feature map at spatial location (i, j).
 
@@ -69,7 +78,9 @@ The results are not very clear, this is because the images are very small.
 
     The heatmap is computed by taking a weighted sum of the feature maps in the layer:
 
+
     $$ L^c_{GradCAM} = ReLU(\sum_k \alpha^k_c A^k) $$
+
 
     where L^c_{GradCAM} is the heatmap for class c.
 
