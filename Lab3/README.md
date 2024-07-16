@@ -38,6 +38,8 @@ The REINFORCE algorithm is a policy gradient method that estimates the policy gr
 #### CartPole-v1 [without baseline]
 ![Results: REINFORCE for Cartpole](images/cartpole_no_baseline.png)
 
+https://github.com/BaiardiLorenzo/DLA/blob/main/Lab3/video/CartPole-v1/cartpole-baseline-episode-0.mp4
+
 #### LunarLander-v2 [without baseline]
 ![Results: REINFORCE for LunarLander](images/lunalender_no_baseline.png)
 
