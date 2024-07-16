@@ -28,8 +28,14 @@ For every epoch, I have saved the gradients of the model and plotted them to see
 We can see that the model with skip connections has a smoother gradient magnitude than the model without skip connections. This is because the skip connections help the model to learn better and avoid the vanishing gradient problem.
 
 ### Results
-![Results: Gradients magnitude of the models](images/result-exercise1.png)
-![Results: Gradients magnitude of the models](images/result-exercise1_2.png)
+
+#### No Skip Connections
+![Results: Gradients No Skip Connections: Epoch 0](images/grads_no_skip_connections_epoch0.png) 
+![Results: Gradients No Skip Connections: Epoch 10](images/grads_no_skip_connections_epoch10.png)
+
+#### Skip Connections
+![Results: Gradients Skip Connections: Epoch 0](images/grads_skip_connections_epoch0.png)
+![Results: Gradients Skip Connections: Epoch 10](images/grads_skip_connections_epoch10.png)
 
 
 ## 2.2. Exercise 2 [FCN]
