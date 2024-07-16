@@ -19,7 +19,7 @@ We have three different exercises in this laboratory:
 2. The second exercise is about implementing a Fully Convolutional Network (FCN), in this case using the ResNet18 model.
 3. The third exercise is about implementing the Grad-CAM algorithm to visualize the activations of the network.
 
-## 2.1. Exercise 1
+## 2.1. Exercise 1 [Skip Connections]
 
 I have implemented the ResNet18 model with a parameter to enable or disable the skip connections. 
 For this exercise, I have trained the ResNet18 model with and without skip connections on the CIFAR10 dataset.
@@ -27,14 +27,12 @@ For every epoch, I have saved the gradients of the model and plotted them to see
 
 We can see that the model with skip connections has a smoother gradient magnitude than the model without skip connections. This is because the skip connections help the model to learn better and avoid the vanishing gradient problem.
 
-The results of the models are saved on the weights and biases platform.
-
 ### Results
 ![Results: Gradients magnitude of the models](images/result-exercise1.png)
 ![Results: Gradients magnitude of the models](images/result-exercise1_2.png)
 
 
-## 2.2. Exercise 2
+## 2.2. Exercise 2 [FCN]
 
 For the second exercise, I have implemented a Fully Convolutional Network (FCN) using the ResNet18 model. 
 
@@ -48,7 +46,7 @@ For the results of the model, I have plotted the input image, the result of the 
 ### Results
 ![Results: Resnet18FCN](images/result-exercise2.png)
 
-## 2.3. Exercise 3
+## 2.3. Exercise 3 [Grad-CAM]
 
 I have implemented the Grad-CAM algorithm to visualize the activations of the network on ResNet18 on the CIFAR10 dataset. We can see the output of the image with the activations of the network. The Grad-CAM algorithm helps us to understand what the network is looking at when it is making a prediction.
 
