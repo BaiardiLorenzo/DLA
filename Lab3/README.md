@@ -1,9 +1,9 @@
-# LABORATORY 2 - DRL
+# LABORATORY 3 - DRL
 
 ## Folder structure
 
-- `Lab2-DRL.ipynb`: Base Jupyter notebook with the laboratory instructions from the course.
-- `Lab2-DRL-Exercise3.ipynb`: Jupyter notebook with the exercises completed by the student.
+- `Lab3-DRL.ipynb`: Base Jupyter notebook with the laboratory instructions from the course.
+- `Lab3-DRL-Exercise3.ipynb`: Jupyter notebook with the exercises completed by the student.
 - `wandb`: Folder with the weights and biases files generated during the training of the models.
 - `images`: Folder with the images used in the README file.
 
