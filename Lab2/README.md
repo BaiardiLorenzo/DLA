@@ -38,8 +38,10 @@ The results are saved on the Weights and Biases platform.
 | DistilBERT | Tweet Eval Irony | 0.71 | 0.73 |
 | DistilBERT | Tweet Eval Emoji | 0.26 | 0.32 |
 
-### Plots
+### Irony Classification
 ![Results: DistilBERT for Tweet Eval Irony](images/results_exercise1_irony.png)
+
+### Emoji Classification
 ![Results: DistilBERT for Tweet Eval Emoji](images/results_exercise1_emoji.png)
 
 
@@ -58,11 +60,9 @@ The results are saved on the Weights and Biases platform.
 | DistilBERT | AI2_ARC | 0.53 |
 | DistilBERT | SWAG | 0.70 |
 
-### Plots
+### Plot AI2_ARC
 ![Results: DistilBERT for AI2_ARC](images/results_exercise2_arc.png)
 
-## 2.3. Exercise 3
+## 2.3. Exercise 3 [NOT FINISHED]
 
 For the third exercise, it is necessary to implement a Text Retrieval Neural Network using the DistilBERT model. In this case the model is trained to retrieve the most similar text to a given query. For the retrieval task, I use a cosine similarity function to compare the embeddings of the query and the text.
-
-*** TO BE COMPLETED ***
