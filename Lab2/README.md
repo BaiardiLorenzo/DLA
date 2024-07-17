@@ -21,6 +21,9 @@ We have three different exercises in this laboratory:
 
 3. The third exercise is a Text Retrieval task using a BERT model.
 
+### BERT model: 
+![BERT model](images/bert.png)
+
 ## 2.1. Exercise 1
 
 For the first exercise, I implemented a Classification Neural Network using the DistilBERT model from the Hugging Face Transformers library. The Classification Neural Network is a feature extractor from the DistilBERT model, followed by a fully connected layer to classify the tweets into the number of the classes to be predicted.
@@ -30,6 +33,16 @@ The Tweet eval dataset for irony classification and for all the categories class
 I reduced the size of the emoji dataset for the execution time reasons.
 
 The results are saved on the Weights and Biases platform.
+
+### Tweet_eval dataset: https://huggingface.co/datasets/cardiffnlp/tweet_eval
+Example of the dataset emoji:
+```
+{'label': 12, 'text': 'Sunday afternoon walking through Venice in the sun with @user ️ ️ ️ @ Abbot Kinney, Venice'}
+```
+Example of the dataset irony:
+```
+{'label': 1, 'text': 'seeing ppl walking w/ crutches makes me really excited for the next 3 weeks of my life'}
+```
 
 ### Results 
 
@@ -52,6 +65,38 @@ In this case the dataset is the AI2_ARC dataset, which is preprocessed adding fo
 For this task, it is necessary to reimplement a datacollator to handle the multiple choice question answering task.
 
 The results are saved on the Weights and Biases platform.
+
+### AI2_ARC dataset: https://huggingface.co/datasets/ai2_arc
+Example of the dataset:
+```
+{
+    "answerKey": "B",
+    "choices": {
+        "label": ["A", "B", "C", "D"],
+        "text": ["Shady areas increased.", "Food sources increased.", "Oxygen levels increased.", "Available water increased."]
+    },
+    "id": "Mercury_SC_405487",
+    "question": "One year, the oak trees in a park began producing more acorns than usual. The next year, the population of chipmunks in the park also increased. Which best explains why there were more chipmunks the next year?"
+}
+```
+
+### SWAG dataset: https://huggingface.co/datasets/swag
+Example of the dataset:
+```
+{
+  "video-id": "anetv_dm5WXFiQZUQ",
+  "fold-ind": "18419",
+  "startphrase", "He rides the motorcycle down the hall and into the elevator. He",
+  "sent1": "He rides the motorcycle down the hall and into the elevator."
+  "sent2": "He",
+  "gold-source": "gold",
+  "ending0": "looks at a mirror in the mirror as he watches someone walk through a door.",
+  "ending1": "stops, listening to a cup of coffee with the seated woman, who's standing.",
+  "ending2": "exits the building and rides the motorcycle into a casino where he performs several tricks as people watch.",
+  "ending3": "pulls the bag out of his pocket and hands it to someone's grandma.",
+  "label": 2,
+}
+```
 
 ### Results
 
