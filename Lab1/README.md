@@ -37,6 +37,9 @@ We can see that the model with skip connections has a smoother gradient magnitud
 ![Results: Gradients Skip Connections: Epoch 0](images/grads_skip_connections_epoch0.png)
 ![Results: Gradients Skip Connections: Epoch 10](images/grads_skip_connections_epoch10.png)
 
+#### Loss
+![Results: Loss](images/loss_skip_connection.png)
+
 
 ## 2.2. Exercise 2 [FCN]
 
