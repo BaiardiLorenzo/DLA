@@ -54,6 +54,8 @@ For the results of the model, I have plotted the input image, the result of the 
 
 ### Results
 ![Results: Resnet18FCN](images/result-exercise2.png)
+![Results: Resnet18FCN](images/result-exercise2_2.png)
+![Results: Resnet18FCN](images/result-exercise2_3.png)
 
 ## 2.3. Exercise 3 [Grad-CAM]
 
