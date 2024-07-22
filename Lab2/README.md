@@ -22,7 +22,7 @@ We have three different exercises in this laboratory:
 3. The third exercise is a Text Retrieval task using a BERT model.
 
 ### BERT model: 
-![BERT model](images/bert.png)
+![BERT model](images/BERT.png)
 
 ## 2.1. Exercise 1
 
