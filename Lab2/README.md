@@ -102,8 +102,8 @@ Example of the dataset:
 
 | Model | Dataset | Accuracy | 
 |-------|---------|----------|
-| DistilBERT | AI2_ARC | 0.53 |
-| DistilBERT | SWAG | 0.70 |
+| DistilBERT | AI2_ARC | 0.526 |
+| DistilBERT | SWAG | 0.705 |
 
 ### Plot AI2_ARC
 ![Results: DistilBERT for AI2_ARC](images/results_exercise2_arc.png)

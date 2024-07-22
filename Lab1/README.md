@@ -34,13 +34,16 @@ We can see that the model with skip connections has a smoother gradient magnitud
 
 ### Results
 
-#### No Skip Connections
-![Results: Gradients No Skip Connections: Epoch 0](images/grad_no_skip_epoch0.png)
-![Results: Gradients No Skip Connections: Epoch 9](images/grad_no_skip_epoch9.png)
+#### Epoch 0
 
-#### Skip Connections
-![Results: Gradients Skip Connections: Epoch 0](images/grad_skip_epoch0.png)
-![Results: Gradients Skip Connections: Epoch 9](images/grad_skip_epoch9.png)
+No Skip Connections        | Skip Connections
+:-------------------------:|:-------------------------:
+![](images/grad_no_skip_epoch0.png) | ![](images/grad_skip_epoch0.png)
+
+#### Epoch 9
+No Skip Connections           | Skip Connections
+:-------------------------:|:-------------------------:
+![](images/grad_no_skip_epoch9.png)| ![](images/grad_skip_epoch9.png)
 
 #### Loss
 Without Skip Connections:
@@ -50,6 +53,23 @@ With Skip Connections:
 ![Results: Loss with Skip Connection](images/loss_skip.png)
 
 We can see that the model with skip connections has a smoother gradient magnitude and a lower loss than the model without skip connections.
+
+### Other Results
+
+I trained the resnet18 model with Adam optimizer instead of SGD. The results are similar to the previous ones.
+
+#### Epoch 0
+No Skip Connections        | Skip Connections
+:-------------------------:|:-------------------------:
+![](images/grads_no_skip_connections_epoch0.png) | ![](images/grads_skip_connections_epoch0.png)
+
+#### Epoch 9
+No Skip Connections           | Skip Connections
+:-------------------------:|:-------------------------:
+![](images/grads_no_skip_connections_epoch10.png) | ![](images/grads_skip_connections_epoch10.png)
+
+#### Train Losses
+![Results: Train Losses](images/loss_skip_connection.png)
 
 ## 2.2. Exercise 2 [FCN]
 
