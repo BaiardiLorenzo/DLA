@@ -33,7 +33,7 @@ The REINFORCE algorithm is a policy gradient method that estimates the policy gr
 
 ![Results: REINFORCE](images/REINFORCE-formula.png)
 
-![Results: REINFORCE with baseline](images/REINFORCE_baseline-formula.png)
+
 
 ![Video Results: REINFORCE with BASELINE) (https://github.com/BaiardiLorenzo/DLA/blob/main/Lab3/video/CartPole-v1/cartpole-baseline-episode-0.mp4)
 
@@ -54,6 +54,10 @@ The REINFORCE algorithm is a policy gradient method that estimates the policy gr
 We can see that the REINFORCE algorithm with a baseline has a better performance than the REINFORCE algorithm without a baseline. 
 
 The REINFORCE algorithm, with and without a baseline, is not able to solve the LunarLander-v2 environment, reaching a maximum score of around 170 points for the REINFORCE algorithm with a baseline.
+
+
+https://github.com/user-attachments/assets/07056f7b-797c-4f4a-9ab3-9d4d5d7cf5f8.mp4
+
 
 ## 2.2. Exercise 2
 
