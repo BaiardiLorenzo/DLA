@@ -1,5 +1,14 @@
 # LABORATORY 3 - DRL
 
+#Video Results: 
+![Cartpole with REINFORCE](https://github.com/user-attachments/assets/db866774-17cb-4ce2-81ae-c309279ea308)
+
+![Cartpole with REINFORCE BASELINE](https://github.com/user-attachments/assets/ecd8d3b5-ebb4-4f57-a44f-a10ddc36c93f)
+
+![Cartpole with DQN](https://github.com/user-attachments/assets/fed700e4-c9f1-4d59-bfb7-b36ac5f87c89)
+
+![LunarLander with DQN](https://github.com/user-attachments/assets/7c3eae00-479d-4d07-b11e-375640a6aa71)
+
 ## Folder structure
 
 - `Lab3-DRL.ipynb`: Base Jupyter notebook with the laboratory instructions from the course.
@@ -8,7 +17,7 @@
 - `wandb`: Folder with the weights and biases files generated during the training of the models.
 - `images`: Folder with the images used in the README file.
 - `model_states`: Folder with the model states generated during the training of the models.
-
+  
 # 1. Introduction
 
 This laboratory is focused on Deep Reinforcement Learning (DRL). The main goal is to understand the basic concepts of DRL and how to implement them using the PyTorch library. 
@@ -32,10 +41,6 @@ For the first exercise, I implemented the REINFORCE algorithm to solve the Lunar
 The REINFORCE algorithm is a policy gradient method that estimates the policy gradient using the likelihood ratio trick. The policy gradient is defined as the gradient of the expected return with respect to the policy parameters.
 
 ![Results: REINFORCE](images/REINFORCE-formula.png)
-
-
-
-![Video Results: REINFORCE with BASELINE) (https://github.com/BaiardiLorenzo/DLA/blob/main/Lab3/video/CartPole-v1/cartpole-baseline-episode-0.mp4)
 
 ### Results
 
@@ -74,13 +79,6 @@ The DQN algorithm is a model-free, off-policy algorithm for learning action-valu
 ![Results: DQN for LunarLander-v2](images/dqn_lunalender.png)
 
 In this case, the DQN algorithm was able to solve the LunarLander-v2 environments. The DQN algorithm was able to achieve a good performance in both environments after few episodes of training respect to the REINFORCE algorithm.
-
-### Video Results: 
-
-
-https://github.com/user-attachments/assets/e105f825-fba8-41a5-84c0-05e96c8af6df
-
-
 
 ## 2.3. Exercise 3 
 
