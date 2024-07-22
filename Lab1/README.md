@@ -3,14 +3,19 @@
 ## Folder structure
 
 - `Lab1-CNNs.ipynb`: Base Jupyter notebook with the laboratory instructions from the course.
-- `Lab1-CNNs-Exercise2.ipynb`: Jupyter notebook with the exercises completed by the student.
+- `Lab1-CNNs-Exercise1.ipynb`: Jupyter notebook with the exercises completed by the student during the laboratory.
+- `Lab1-CNNs-Exercise2.ipynb`: Jupyter notebook with the exercises completed by the student for the exam.
 - `wandb`: Folder with the weights and biases files generated during the training of the models.
 - `images`: Folder with the images of the results of the exercises.
 - `model_states`: Folder with the model states generated during the training of the models.
 
 # 1. Introduction
 
-This laboratory is focused on Convolutional Neural Networks (CNNs). The main goal is to understand the basic concepts of CNNs and how to implement them using the PyTorch library. The laboratory is divided into two parts. In the first part, we have the base file 'Lab1-CNNs.ipynb' with the instructions and the code to be completed by the student. In the second part, we have the file 'Lab1-CNNs-Exercise2.ipynb' with the exercises to be completed by the student.
+This laboratory is focused on Convolutional Neural Networks (CNNs). The main goal is to understand the basic concepts of CNNs and how to implement them using the PyTorch library. The laboratory is divided into two parts:
+
+In the first part, we have the base file 'Lab1-CNNs.ipynb' with the instructions and the code to be completed by the student during the laboratory session.
+
+In the second part, we have the file 'Lab1-CNNs-Exercise2.ipynb' with the exercises to be completed by the student for the exam.
 
 # 2. Exercises
 
@@ -40,8 +45,11 @@ We can see that the model with skip connections has a smoother gradient magnitud
 #### Loss
 ![Results: Loss](images/loss_skip_connection.png)
 
+We can see that the model with skip connections has a smoother gradient magnitude and a lower loss than the model without skip connections.
 
 ## 2.2. Exercise 2 [FCN]
+
+### From the paper: https://arxiv.org/abs/1411.4038
 
 For the second exercise, I have implemented a Fully Convolutional Network (FCN) using the ResNet18 model. 
 
@@ -58,6 +66,8 @@ For the results of the model, I have plotted the input image, the result of the 
 ![Results: Resnet18FCN](images/result-exercise2_3.png)
 
 ## 2.3. Exercise 3 [Grad-CAM]
+
+### From the paper: https://arxiv.org/abs/1610.02391
 
 I have implemented the Grad-CAM algorithm to visualize the activations of the network on ResNet18 on the CIFAR10 dataset. We can see the output of the image with the activations of the network. The Grad-CAM algorithm helps us to understand what the network is looking at when it is making a prediction.
 
