@@ -1,13 +1,13 @@
 # LABORATORY 3 - DRL
 
 #Video Results: 
-![Cartpole with REINFORCE](https://github.com/user-attachments/assets/db866774-17cb-4ce2-81ae-c309279ea308)
+![Cartpole with REINFORCE](https://github.com/user-attachments/assets/db866774-17cb-4ce2-81ae-c309279ea308.mp4)
 
-![Cartpole with REINFORCE BASELINE](https://github.com/user-attachments/assets/ecd8d3b5-ebb4-4f57-a44f-a10ddc36c93f)
+![Cartpole with REINFORCE BASELINE](https://github.com/user-attachments/assets/ecd8d3b5-ebb4-4f57-a44f-a10ddc36c93f.mp4)
 
-![Cartpole with DQN](https://github.com/user-attachments/assets/fed700e4-c9f1-4d59-bfb7-b36ac5f87c89)
+![Cartpole with DQN](https://github.com/user-attachments/assets/fed700e4-c9f1-4d59-bfb7-b36ac5f87c89.mp4)
 
-![LunarLander with DQN](https://github.com/user-attachments/assets/7c3eae00-479d-4d07-b11e-375640a6aa71)
+![LunarLander with DQN](https://github.com/user-attachments/assets/7c3eae00-479d-4d07-b11e-375640a6aa71.mp4)
 
 ## Folder structure
 
