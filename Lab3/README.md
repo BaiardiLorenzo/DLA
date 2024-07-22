@@ -3,9 +3,11 @@
 ## Folder structure
 
 - `Lab3-DRL.ipynb`: Base Jupyter notebook with the laboratory instructions from the course.
-- `Lab3-DRL-Exercise3.ipynb`: Jupyter notebook with the exercises completed by the student.
+- `Lab3-DRL-PARTLY.ipynb`: Jupyter notebook with the exercises completed by the student during the laboratory session.
+- `Lab3-DRL-Exercise3.ipynb`: Jupyter notebook with the exercises completed by the student for the exam.
 - `wandb`: Folder with the weights and biases files generated during the training of the models.
 - `images`: Folder with the images used in the README file.
+- `model_states`: Folder with the model states generated during the training of the models.
 
 # 1. Introduction
 
@@ -71,7 +73,7 @@ The DQN algorithm is a model-free, off-policy algorithm for learning action-valu
 
 In this case, the DQN algorithm was able to solve the LunarLander-v2 environments. The DQN algorithm was able to achieve a good performance in both environments after few episodes of training respect to the REINFORCE algorithm.
 
-## 2.3. Exercise 3 [NOT FINISHED]
+## 2.3. Exercise 3 
 
 For the third exercise, I implemented the PPO algorithm to solve the CarRacing-v0 environment from the OpenAI Gym.
 In this case, the network architecture is a CNN with two convolutional layers and two fully connected layers.
@@ -80,6 +82,7 @@ In this case, the network architecture is a CNN with two convolutional layers an
 
 The PPO algorithm is a policy gradient method that uses a clipped objective function to improve the stability of the learning process. 
 
+![Results: PPO](images/PPO.png)
 ### Results
 
 #### CarRacing-v0
