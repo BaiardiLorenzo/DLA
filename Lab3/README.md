@@ -35,6 +35,8 @@ The REINFORCE algorithm is a policy gradient method that estimates the policy gr
 
 ![Results: REINFORCE with baseline](images/REINFORCE_baseline-formula.png)
 
+![Video Results: REINFORCE with BASELINE) (https://github.com/BaiardiLorenzo/DLA/blob/main/Lab3/video/CartPole-v1/cartpole-baseline-episode-0.mp4)
+
 ### Results
 
 #### CartPole-v1 [without baseline]
