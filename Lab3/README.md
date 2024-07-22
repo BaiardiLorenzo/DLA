@@ -55,10 +55,6 @@ We can see that the REINFORCE algorithm with a baseline has a better performance
 
 The REINFORCE algorithm, with and without a baseline, is not able to solve the LunarLander-v2 environment, reaching a maximum score of around 170 points for the REINFORCE algorithm with a baseline.
 
-
-https://github.com/user-attachments/assets/07056f7b-797c-4f4a-9ab3-9d4d5d7cf5f8.mp4
-
-
 ## 2.2. Exercise 2
 
 For the second exercise, I implemented the DQN algorithm to solve the CartPole-v1 and LunarLander-v2 environments from the OpenAI Gym.
@@ -78,6 +74,13 @@ The DQN algorithm is a model-free, off-policy algorithm for learning action-valu
 ![Results: DQN for LunarLander-v2](images/dqn_lunalender.png)
 
 In this case, the DQN algorithm was able to solve the LunarLander-v2 environments. The DQN algorithm was able to achieve a good performance in both environments after few episodes of training respect to the REINFORCE algorithm.
+
+### Video Results: 
+
+
+https://github.com/user-attachments/assets/e105f825-fba8-41a5-84c0-05e96c8af6df
+
+
 
 ## 2.3. Exercise 3 
 
