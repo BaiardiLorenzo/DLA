@@ -79,15 +79,15 @@ The results are not very clear, this is because the images are very small.
 
 - Compute the Gradient of the Score with Respect to Feature Maps:
 
-    Let y^c be the score for class c, and let $ A^k $ represent the feature maps of the k-th convolutional layer. The gradient of $ y^c $ with respect to $ A^k $ is given by: $ \frac{\partial y^c}{\partial A^k} $
+    Let $y^c$ be the score for class c, and let $A^k$ represent the feature maps of the k-th convolutional layer. The gradient of $y^c$ with respect to $A^k$ is given by: $\frac{\partial y^c}{\partial A^k}$
 
 - Average the Gradients to Get Weights:
 
-    To get the weights $ \alpha^k_c $ for each feature map, you average the gradients over all spatial locations: $ \alpha^k_c = \frac{1}{Z} \sum_{i,j} \frac{\partial y^c}{\partial A^k_{ij}} $ where Z is the number of spatial locations, and $ A^k_{ij} $ is the value of the k-th feature map at spatial location (i, j).
+    To get the weights $\alpha^k_c$ for each feature map, you average the gradients over all spatial locations: $\alpha^k_c = \frac{1}{Z} \sum_{i,j}\frac{\partial y^c}{\partial A^k_{ij}}$ where Z is the number of spatial locations, and $A^k_{ij}$ is the value of the k-th feature map at spatial location (i, j).
 
 - Compute the Heatmap:
 
-    The heatmap is computed by taking a weighted sum of the feature maps in the layer: $ L^c_{GradCAM} = ReLU(\sum_k \alpha^k_c A^k) $ where $ L^c_{GradCAM} $ is the heatmap for class c.
+    The heatmap is computed by taking a weighted sum of the feature maps in the layer: $L^c_{GradCAM} = ReLU(\sum_k \alpha^k_c A^k)$ where $L^c_{GradCAM}$ is the heatmap for class c.
 
 ### Results
 ![Results: GradCamModel on Resnet18](images/result-exercise3.png)
