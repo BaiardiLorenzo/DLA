@@ -35,15 +35,19 @@ We can see that the model with skip connections has a smoother gradient magnitud
 ### Results
 
 #### No Skip Connections
-![Results: Gradients No Skip Connections: Epoch 0](images/grads_no_skip_connections_epoch0.png) 
-![Results: Gradients No Skip Connections: Epoch 10](images/grads_no_skip_connections_epoch10.png)
+![Results: Gradients No Skip Connections: Epoch 0](images/grad_no_skip_epoch0.png)
+![Results: Gradients No Skip Connections: Epoch 9](images/grad_no_skip_epoch9.png)
 
 #### Skip Connections
-![Results: Gradients Skip Connections: Epoch 0](images/grads_skip_connections_epoch0.png)
-![Results: Gradients Skip Connections: Epoch 10](images/grads_skip_connections_epoch10.png)
+![Results: Gradients Skip Connections: Epoch 0](images/grad_skip_epoch0.png)
+![Results: Gradients Skip Connections: Epoch 9](images/grad_skip_epoch9.png)
 
 #### Loss
-![Results: Loss](images/loss_skip_connection.png)
+Without Skip Connections:
+![Results: Loss no Skip Connection](images/loss_no_skip.png)
+
+With Skip Connections:
+![Results: Loss with Skip Connection](images/loss_skip.png)
 
 We can see that the model with skip connections has a smoother gradient magnitude and a lower loss than the model without skip connections.
 
@@ -91,5 +95,9 @@ The results are not very clear, this is because the images are very small.
 
 ### Results
 ![Results: GradCamModel on Resnet18](images/result-exercise3.png)
+![Results: GradCamModel on Resnet18](images/result-exercise3_1.png)
+![Results: GradCamModel on Resnet18](images/result_exercise3_2.png)
+![Results: GradCamModel on Resnet18](images/result_exercise3_3.png)
+![Results: GradCamModel on Resnet18](images/result_exercise3_4.png)
 
 
