@@ -106,6 +106,8 @@ In the notebook cell, where the DQN algorithm is implemented, seems to be that t
 ### PPO Algorithm
 The PPO algorithm is a policy gradient method that uses a clipped objective function to improve the stability of the learning process. 
 
+![PPO Algorithm](images/PPO.png)
+
 #### Results - Base and Improved Implementation
 Like the DQN algorithm, the implementation of the PPO algorithm seems to be working correctly.
 
