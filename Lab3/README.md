@@ -94,14 +94,19 @@ In this case, the DQN algorithm was able to solve the LunarLander-v2 environment
 For the third exercise, I implemented the PPO algorithm to solve the CarRacing-v0 environment from the OpenAI Gym.
 In this case, the network architecture is a CNN with two convolutional layers and two fully connected layers.
 
-### PPO Algorithm
+The main problem for this exercise was the training time. 
+For this reason i can not provide a good result for this environment.
 
+### DQN Algorithm
+I try to resolve the CarRacing-v2 environment with the DQN algorithm.
+
+#### Results
+In the notebook cell, where the DQN algorithm is implemented, seems to be that the algorithm is working correctly.
+
+### PPO Algorithm
 The PPO algorithm is a policy gradient method that uses a clipped objective function to improve the stability of the learning process. 
 
-![Results: PPO](images/PPO.png)
-### Results
-
-#### CarRacing-v0
-![Results: PPO for CarRacing-v0](images/PPO_carracing.png)
+#### Results - Base and Improved Implementation
+Like the DQN algorithm, the implementation of the PPO algorithm seems to be working correctly.
 
 
