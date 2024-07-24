@@ -101,6 +101,8 @@ In this case, the network architecture is a CNN with two convolutional layers an
 
 The main problem for this exercise was the training time. 
 
+For the environment CarRacing-v2, I implemented a wrapper to preprocess the images, resizing the images, converting them to grayscale, and skipping frames.
+
 ### DQN Algorithm
 I try to resolve the CarRacing-v2 environment with the DQN algorithm.
 
