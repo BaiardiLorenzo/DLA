@@ -136,8 +136,6 @@ Eval Reward         |  Total Reward
 :-------------------------:|:-------------------------:
 ![PPO CarRacing eval reward](images/PPO%20improved%20eval.png) | ![PPO CarRacing total reward](images/PPO%20improved%20total.png)
 
-![PPO CarRacing episode](images/PPO%20improved%20episodes.png)
-
 #### Comparison
 
 Eval Reward         |  Total Reward
