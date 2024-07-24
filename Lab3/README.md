@@ -18,6 +18,11 @@ https://github.com/user-attachments/assets/fed700e4-c9f1-4d59-bfb7-b36ac5f87c89.
 
 https://github.com/user-attachments/assets/7c3eae00-479d-4d07-b11e-375640a6aa71.mp4
 
+## CarRacing DQN
+Example of the CarRacing DQN algorithm working.
+
+![CarRacing DQN](images/example_DQNCarRacing.gif)
+
 ## Folder structure
 
 - `Lab3-DRL.ipynb`: Base Jupyter notebook with the laboratory instructions from the course.
@@ -95,13 +100,18 @@ For the third exercise, I implemented the PPO algorithm to solve the CarRacing-v
 In this case, the network architecture is a CNN with two convolutional layers and two fully connected layers.
 
 The main problem for this exercise was the training time. 
-For this reason i can not provide a good result for this environment.
 
 ### DQN Algorithm
 I try to resolve the CarRacing-v2 environment with the DQN algorithm.
 
 #### Results
 In the notebook cell, where the DQN algorithm is implemented, seems to be that the algorithm is working correctly.
+
+Eval Reward         |  Total Reward
+:-------------------------:|:-------------------------:
+![DQN CarRacing eval reward](images/DQN_carracing_total_reward.png) | ![DQN CarRacing total reward](images/DQN_carracing_tot_reward.png)
+
+![DQN CarRacing episode](images/DQN_carracing%20episodes.png)
 
 ### PPO Algorithm
 The PPO algorithm is a policy gradient method that uses a clipped objective function to improve the stability of the learning process. 
