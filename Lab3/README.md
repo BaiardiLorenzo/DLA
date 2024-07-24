@@ -123,4 +123,10 @@ The PPO algorithm is a policy gradient method that uses a clipped objective func
 #### Results - Base and Improved Implementation
 Like the DQN algorithm, the implementation of the PPO algorithm seems to be working correctly.
 
+Eval Reward         |  Total Reward
+:-------------------------:|:-------------------------:
+![PPO CarRacing eval reward](images/PPO%20CarRacing%20eval.png) | ![PPO CarRacing total reward](images/PPO%20CarRacing%20total.png)
+
+![PPO CarRacing episode](images/PPO%20episode%20carRacing.png)
+
 
