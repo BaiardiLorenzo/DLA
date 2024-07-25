@@ -130,11 +130,13 @@ Eval Reward         |  Total Reward
 ![PPO CarRacing episode](images/PPO%20episode%20carRacing.png)
 
 #### Results - Improved Implementation
-With the crappy implementation of the improved PPO algorithm, the algorithm initially has a better performance than the base implementation, but after some episodes, the performance dramatically decreases.
+The improved implementation of the PPO algorithm has a better performance than the base implementation.
 
 Eval Reward         |  Total Reward
 :-------------------------:|:-------------------------:
 ![PPO CarRacing eval reward](images/PPO%20improved%20eval.png) | ![PPO CarRacing total reward](images/PPO%20improved%20total.png)
+
+![PPO CarRacing episode](images/PPO%20improved%20episode.png)
 
 #### Comparison
 
