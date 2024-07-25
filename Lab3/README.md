@@ -1,6 +1,6 @@
 # LABORATORY 3 - DRL
 
-#Video Results: 
+# Video Results: 
 
 ## Cartpole REINFORCE without BASELINE
 
