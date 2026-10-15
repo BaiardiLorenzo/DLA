@@ -1,146 +1,48 @@
-# LABORATORY 3 - DRL
+# Lab 3 — reinforcement learning
 
-# Video Results: 
+[Consegne originali](CONSEGNE.md). Algoritmi PyTorch espliciti, nessuna libreria di agenti pronta e nessun tracking esterno. Gli esperimenti richiedono esecuzioni reali: il codice non dimostra da solo che un ambiente sia risolto.
 
-## Cartpole REINFORCE without BASELINE
+| Consegna | Comando |
+|---|---|
+| 1 REINFORCE CartPole e valutazione separata | `python -m lab3.ex1` |
+| 2 Confronto baseline none/standardized/value | `python -m lab3.ex2` |
+| 3.1 REINFORCE LunarLander con tutte le baseline | `python -m lab3.ex3_1` |
+| 3.2 DQN CartPole | `python -m lab3.ex3_2 --env CartPole-v1` |
+| 3.2 DQN LunarLander | `python -m lab3.ex3_2 --env LunarLander-v3` |
+| 3.3 CarRacing con DQN | `python -m lab3.ex3_3 --algorithm dqn` |
+| 3.3 CarRacing con PPO | `python -m lab3.ex3_3 --algorithm ppo` |
 
-https://github.com/user-attachments/assets/db866774-17cb-4ce2-81ae-c309279ea308.mp4
+## Esecuzioni e checkpoint
 
-## Cartpole REINFORCE with BASELINE
+```powershell
+python -m lab3.ex2 --output-dir outputs/lab3/cartpole_baselines
+python -m lab3.ex3_2 --env LunarLander-v3 --output-dir outputs/lab3/lunar_dqn
+python -m lab3.ex3_3 --algorithm ppo --output-dir outputs/lab3/racing_ppo
+python -m lab3.ex3_3 --checkpoint outputs/lab3/racing_ppo/best.pt --video --eval-episodes 10
+```
 
-https://github.com/user-attachments/assets/ecd8d3b5-ebb4-4f57-a44f-a10ddc36c93f.mp4
+`--checkpoint` esegue solo una valutazione dell'agente salvato; `--video` registra il primo episodio. Non è un resume del training. Il checkpoint include ambiente, preprocessing e reti; per REINFORCE/PPO include la rete del valore quando presente. `last.pt` è l'ultimo agente e `best.pt` quello con ricompensa di valutazione migliore.
 
-## Cartpole DQN
+Per DQN/PPO `--continue-run <run_interrotto>` continua il training dai pesi di `recovery.pt` (o `best.pt` nei run precedenti), con optimizer e replay nuovi. Recupera i contatori e solo la cronologia precedente al checkpoint: le iterazioni successive prive di pesi salvati non sono attribuite al modello recuperato. Il budget richiesto è complessivo. `finish_remaining.ps1` completa i soli CarRacing mancanti in background e aggiorna il report senza usare Codex.
 
-https://github.com/user-attachments/assets/fed700e4-c9f1-4d59-bfb7-b36ac5f87c89.mp4
+`--episodes` controlla REINFORCE/DQN. PPO usa `--total-steps`, contato **dopo frame skipping**, e `--rollout-steps`: entrambi indicano transizioni complessive, sommate fra tutti gli ambienti. CarRacing PPO usa per default `--num-envs 8`; `--num-envs 1` seleziona il loop sequenziale. I due budget devono essere divisibili per il numero di ambienti. I CSV riportano gli episodi di training e le valutazioni periodiche, con media della ricompensa totale non scontata, deviazione standard e lunghezza media. CarRacing misura la lunghezza in azioni del wrapper, non in frame nativi.
 
-## LunarLender DQN
+## Dettagli degli algoritmi
 
-https://github.com/user-attachments/assets/7c3eae00-479d-4d07-b11e-375640a6aa71.mp4
+REINFORCE usa ritorni scontati e una distribuzione categorica parametrizzata dai logit. Le tre baseline sono: nessuna; standardizzazione con deviazione standard protetta contro zero; rete V(s) addestrata sui ritorni, con vantaggio separato dal grafo del valore. La rete del valore può fare bootstrap alle interruzioni TimeLimit; REINFORCE senza rete usa il ritorno della traiettoria episodica osservata. `--baselines` permette confronti selettivi.
 
-## CarRacing DQN
-Example of the CarRacing DQN algorithm working.
+DQN usa replay uniforme, rete target inizializzata dalla rete online, loss Huber, clipping dei gradienti e aggiornamento soft con `--tau`. L'esplorazione epsilon-greedy decade linearmente in `--epsilon-steps`. Il bootstrap viene annullato su `terminated`, mantenuto su `truncated`; il reset avviene su entrambi. `--capacity`, `--warmup`, `--update-every` e `--batch-size` controllano il replay. CarRacing conserva frame uint8 sul processore: capacità predefinita 10.000, circa 565 MB per le due osservazioni per transizione, oltre all'overhead.
 
-![CarRacing DQN](images/example_DQNCarRacing.gif)
+PPO conserva log-probabilità e valori della policy prima dell'aggiornamento. GAE fa bootstrap sullo stato finale dei TimeLimit e interrompe la ricorrenza a ogni reset. Loss clipped, regressione del valore ed entropia; vantaggi normalizzati e minibatch rimescolati per più epoche. Il buffer è on-policy e viene svuotato dopo ogni update. `--gae-lambda`, `--clip`, `--entropy`, `--minibatch` e `--update-epochs` sono configurabili.
 
-## Folder structure
+Con più ambienti PPO usa [AsyncVectorEnv](https://gymnasium.farama.org/api/vector/async_vector_env/) e processi Windows `spawn`. Il reset automatico è disabilitato: il codice calcola il bootstrap sullo stato finale e poi resetta soltanto gli ambienti terminati tramite maschera, come documentato da [Farama](https://farama.org/Vector-Autoreset-Mode). GAE non passa fra ambienti concatenati nel minibatch. La valutazione resta su un singolo ambiente distinto e non alimenta i rollout.
 
-- `Lab3-DRL.ipynb`: Base Jupyter notebook with the laboratory instructions from the course.
-- `Lab3-DRL-PARTLY.ipynb`: Jupyter notebook with the exercises completed by the student during the laboratory session.
-- `Lab3-DRL-Exercise3.ipynb`: Jupyter notebook with the exercises completed by the student for the exam.
-- `wandb`: Folder with the weights and biases files generated during the training of the models.
-- `images`: Folder with the images used in the README file.
-- `model_states`: Folder with the model states generated during the training of the models.
-  
-# 1. Introduction
+Per CarRacing si usa **continuous=False**. Crop della regione di gioco, grayscale 84×84, quattro frame impilati e ripetizione dell'azione per quattro frame; i reward intermedi vengono sommati e il frame skipping si ferma appena l'episodio finisce. DQN e PPO usano una CNN con due convoluzioni; la divisione per 255 avviene nella rete.
 
-This laboratory is focused on Deep Reinforcement Learning (DRL). The main goal is to understand the basic concepts of DRL and how to implement them using the PyTorch library. 
+Ogni `--eval-every` episodi (REINFORCE/DQN) o rollout aggiornati (PPO), l'agente viene eseguito per `--eval-episodes` episodi in un **secondo ambiente**, con azioni greedy e seed dedicati. Il confronto periodico usa lo stesso insieme di seed fra modelli. La valutazione non inserisce transizioni nei buffer e non cambia l'esplorazione. L'analisi con checkpoint usa un ulteriore insieme di seed.
 
-# 2. Exercises
+## Migrazione degli ambienti e analisi
 
-We have three different exercises in this laboratory:
+Gli ID correnti sono `CartPole-v1`, `LunarLander-v3`, `CarRacing-v3`. LunarLander v3 corregge reset e nondeterminismo; CarRacing aggiorna la semantica di fine pista e terminazione. Non confrontare direttamente i vecchi video/score v2 con quelli nuovi senza considerare queste differenze. Riferimenti: [LunarLander](https://gymnasium.farama.org/environments/box2d/lunar_lander/), [CarRacing](https://gymnasium.farama.org/environments/box2d/car_racing/).
 
-1. For the first exercise it is necessary to implement the REINFORCE algorithm to solve the LunarLander-v2 environment from the OpenAI Gym.
-
-2. For the second exercise it is necessary to implement the DQN algorithm to solve the CartPole-v1 and LunarLander-v2 environments from the OpenAI Gym.
-
-3. For the third exercise it is necessary to implement the PPO algorithm to solve the CarRacing-v0 environment from the OpenAI Gym.
-
-## 2.1. Exercise 1
-
-For the first exercise, I implemented the REINFORCE algorithm to solve the LunarLander-v2 and CartPole-v1 environments from the OpenAI Gym with and without a baseline.
-
-### REINFORCE Algorithm
-
-The REINFORCE algorithm is a policy gradient method that estimates the policy gradient using the likelihood ratio trick. The policy gradient is defined as the gradient of the expected return with respect to the policy parameters.
-
-![Results: REINFORCE](images/REINFORCE-formula.png)
-
-### Results
-
-#### CartPole-v1 [without baseline]
-![Results: REINFORCE for Cartpole](images/cartpole_no_baseline.png)
-
-#### LunarLander-v2 [without baseline]
-![Results: REINFORCE for LunarLander](images/lunalender_no_baseline.png)
-
-#### CartPole-v1 [with baseline]
-![Results: REINFORCE for Cartpole](images/cartpole_baseline.png)
-
-#### LunarLander-v2 [with baseline]
-![Results: REINFORCE for LunarLander](images/lunalender_baseline.png)
-
-We can see that the REINFORCE algorithm with a baseline has a better performance than the REINFORCE algorithm without a baseline. 
-
-The REINFORCE algorithm, with and without a baseline, is not able to solve the LunarLander-v2 environment, reaching a maximum score of around 170 points for the REINFORCE algorithm with a baseline.
-
-## 2.2. Exercise 2
-
-For the second exercise, I implemented the DQN algorithm to solve the CartPole-v1 and LunarLander-v2 environments from the OpenAI Gym.
-
-### DQN Algorithm
-
-The DQN algorithm is a model-free, off-policy algorithm for learning action-value functions. The DQN algorithm uses a replay buffer to store the experiences and a target network to stabilize the learning process.
-
-![Results: DQN](images/DQN-algorithm.png)
-
-### Results
-
-#### CartPole-v1
-![Results: DQN for CartPole-v1](images/dqn_cartpole.png)
-
-#### LunarLander-v2
-![Results: DQN for LunarLander-v2](images/dqn_lunalender.png)
-
-In this case, the DQN algorithm was able to solve the LunarLander-v2 environments. The DQN algorithm was able to achieve a good performance in both environments after few episodes of training respect to the REINFORCE algorithm.
-
-## 2.3. Exercise 3 
-
-For the third exercise, I implemented the PPO algorithm to solve the CarRacing-v0 environment from the OpenAI Gym.
-In this case, the network architecture is a CNN with two convolutional layers and two fully connected layers.
-
-The main problem for this exercise was the training time. 
-
-For the environment CarRacing-v2, I implemented a wrapper to preprocess the images, resizing the images, converting them to grayscale, and skipping frames.
-
-### DQN Algorithm
-I try to resolve the CarRacing-v2 environment with the DQN algorithm.
-
-#### Results
-In the notebook cell, where the DQN algorithm is implemented, seems to be that the algorithm is working correctly.
-
-Eval Reward         |  Total Reward
-:-------------------------:|:-------------------------:
-![DQN CarRacing eval reward](images/DQN_carracing_total_reward.png) | ![DQN CarRacing total reward](images/DQN_carracing_tot_reward.png)
-
-![DQN CarRacing episode](images/DQN_carracing%20episodes.png)
-
-### PPO Algorithm
-The PPO algorithm is a policy gradient method that uses a clipped objective function to improve the stability of the learning process. 
-
-![PPO Algorithm](images/PPO.png)
-
-#### Results - Base Implementation
-Like the DQN algorithm, the implementation of the PPO algorithm seems to be working correctly.
-
-Eval Reward         |  Total Reward
-:-------------------------:|:-------------------------:
-![PPO CarRacing eval reward](images/PPO%20CarRacing%20eval.png) | ![PPO CarRacing total reward](images/PPO%20CarRacing%20total.png)
-
-![PPO CarRacing episode](images/PPO%20episode%20carRacing.png)
-
-#### Results - Improved Implementation
-The improved implementation of the PPO algorithm has a better performance than the base implementation.
-
-Eval Reward         |  Total Reward
-:-------------------------:|:-------------------------:
-![PPO CarRacing eval reward](images/PPO%20improved%20eval.png) | ![PPO CarRacing total reward](images/PPO%20improved%20total.png)
-
-![PPO CarRacing episode](images/PPO%20improved%20episode.png)
-
-#### Comparison
-
-Eval Reward         |  Total Reward
-:-------------------------:|:-------------------------:
-![PPO CarRacing eval reward](images/PPO%20comparison.png) | ![PPO CarRacing total reward](images/PPO%20comparison%20total.png)
-
+Confronta velocità di apprendimento, stabilità e ricompense su episodi di valutazione; la media mobile del training non sostituisce questa misura. Puoi ripetere gli esperimenti con seed diversi. Per dichiarare un ambiente risolto considera una valutazione sufficientemente ampia e il criterio della consegna, senza dedurlo soltanto da un singolo episodio favorevole. Training e valutazioni reali sono documentati in [RISULTATI.md](../RISULTATI.md), compresi gli agenti che non raggiungono la soglia di soluzione.

@@ -1,0 +1,8 @@
+data/*
+Lab1/wandb/*
+Lab1/model_states/*
+Lab2/wandb/*
+Lab2/model_states/*
+Lab3/wandb/*
+Lab3/model_states/*
+Lab4/wandb/*

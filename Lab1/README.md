@@ -1,123 +1,41 @@
-# LABORATORY 1 - Convolutional Neural Networks
+# Lab 1 — reti per immagini
 
-## Folder structure
+[Consegne originali](CONSEGNE.md). Tutte le attività sono implementate. Le esecuzioni reali sono documentate in [RISULTATI.md](../RISULTATI.md); puoi ripeterle dalla radice, in `DLA`.
 
-- `Lab1-CNNs.ipynb`: Base Jupyter notebook with the laboratory instructions from the course.
-- `Lab1-CNNs-Exercise1.ipynb`: Jupyter notebook with the exercises completed by the student during the laboratory.
-- `Lab1-CNNs-Exercise2.ipynb`: Jupyter notebook with the exercises completed by the student for the exam.
-- `wandb`: Folder with the weights and biases files generated during the training of the models.
-- `images`: Folder with the images of the results of the exercises.
-- `model_states`: Folder with the model states generated during the training of the models.
+| Consegna | Comando | Output principale |
+|---|---|---|
+| 1.1 MLP baseline e confronto di profondità | `python -m lab1.ex1_1` | Loss/accuracy MNIST per profondità e confronto |
+| 1.2 CNN plain/residuali di profondità crescente | `python -m lab1.ex1_2` | CIFAR-10, confronto per profondità e skip |
+| 2.1 Quantificare il beneficio delle residuali | `python -m lab1.ex2_1` | CSV gradienti per strato/epoca, grafici e curve |
+| 2.2 Fully-convolutionalizzare un classificatore | `python -m lab1.ex2_2` | Classificatore MNIST, FCN, canvas e localizzazioni |
+| 2.3 Spiegare le predizioni tramite Grad-CAM | `python -m lab1.ex2_3 --checkpoint outputs/lab1/cnn/residual_2/best.pt` | Immagini e heatmap per classe |
 
-# 1. Introduction
+## Ordine suggerito
 
-This laboratory is focused on Convolutional Neural Networks (CNNs). The main goal is to understand the basic concepts of CNNs and how to implement them using the PyTorch library. The laboratory is divided into two parts:
+```powershell
+python -m lab1.ex1_1 --output-dir outputs/lab1/mlp
+python -m lab1.ex1_2 --output-dir outputs/lab1/cnn
+python -m lab1.ex2_1 --output-dir outputs/lab1/gradients
+python -m lab1.ex2_2 --output-dir outputs/lab1/fcn
+python -m lab1.ex2_3 --checkpoint outputs/lab1/cnn/residual_2/best.pt --output-dir outputs/lab1/gradcam
+```
 
-In the first part, we have the base file 'Lab1-CNNs.ipynb' with the instructions and the code to be completed by the student during the laboratory session.
+Per ripetere i comandi usa nuove directory di output. La FCN è autonoma: addestra un classificatore MNIST prima della conversione. Per riutilizzare quel classificatore: `python -m lab1.ex2_2 --checkpoint outputs/lab1/fcn/classifier/best.pt`.
 
-In the second part, we have the file 'Lab1-CNNs-Exercise2.ipynb' with the exercises to be completed by the student for the exam.
+## Metodo e interpretazione
 
-# 2. Exercises
+MNIST e CIFAR-10 mantengono il test ufficiale separato; il training ufficiale è diviso 90%/10% per training e validation. I confronti riportano training e validation, senza usare il test per selezionare architetture. Stesso seed, split, batch e optimizer per ciascun modello.
 
-We have three different exercises in this laboratory:
-1. The first exercise is about implementing a CNN model, in this case a ResNet18 model, and visualizing the gradients and the effect of the skip connections on the model.
-2. The second exercise is about implementing a Fully Convolutional Network (FCN), in this case using the ResNet18 model.
-3. The third exercise is about implementing the Grad-CAM algorithm to visualize the activations of the network.
+L'MLP usa width 64 e profondità 2/4/8/16. Le CNN hanno tre stadi da 32/64/128 canali e 1/2/4 blocchi per stadio; ogni blocco ha due convoluzioni. Versioni plain e residuali hanno gli stessi pesi e cambiano soltanto la somma dello skip. I CSV riportano anche il numero di convoluzioni. Puoi cambiare `--depths`, `--width`, `--blocks`, `--epochs`, `--batch-size` e `--lr`.
 
-## 2.1. Exercise 1 [Skip Connections]
+L'esercizio 2.1 esegue un confronto dedicato e raccoglie la media del gradiente assoluto delle matrici dei pesi, dopo backward e prima dell'optimizer, mediata sui minibatch di ogni epoca. `gradients.csv` identifica ogni strato; i grafici mostrano prima e ultima epoca su scala logaritmica. Confronta questi valori insieme a loss e accuracy: un gradiente maggiore non dimostra da solo un modello migliore.
 
-I have implemented the ResNet18 model with a parameter to enable or disable the skip connections. 
-For this exercise, I have trained the ResNet18 model with and without skip connections on the CIFAR10 dataset.
-For every epoch, I have saved the gradients of the model and plotted them to see the effect of the skip connections on the model.
+La FCN riutilizza le convoluzioni e converte i due Linear in Conv2d 5×5 e 1×1, copiando pesi e bias. Su una patch 28×28 restituisce la stessa classificazione del modello originale; su immagini grandi produce una griglia con stride 4 e campo ricettivo 26. `class_maps.pt` salva griglia, canvas e mappe interpolate alla risoluzione di ogni pixel; l'interpolazione non aggiunge una predizione indipendente per pixel. I bounding box sono finestre di classificazione, con filtro di completezza del tratto, centratura del baricentro e non-maximum suppression. Questi filtri usano solo l'immagine, non le posizioni reali delle cifre. Non è una segmentazione supervisionata e non ha una classe background appresa: cifre vicine o molto decentrate possono limitarla. `detections.json` conserva ground truth, predizioni e precision/recall a IoU 0.5 sul singolo canvas sintetico, da non confondere con un benchmark di detection completo. `--confidence` controlla il filtro; `--digits` il numero di cifre. Il generatore del canvas ha un seed separato dal training; `--canvas-run` permette di riusare esattamente input e ground truth di un'esecuzione precedente.
 
-We can see that the model with skip connections has a smoother gradient magnitude than the model without skip connections. This is because the skip connections help the model to learn better and avoid the vanishing gradient problem.
+Per valutare i classificatori sul test ufficiale: `python -m lab1.evaluate --checkpoint outputs/lab1/cnn`. Una directory valuta tutti i `best.pt` contenuti; un file valuta solo quel modello.
 
-### Results
+Grad-CAM usa il logit della classe predetta; `--class-id` permette di studiarne un'altra. Il gradiente viene mediato sulle dimensioni spaziali, le feature pesate vengono sommate e passate attraverso ReLU. Le mappe nulle restano nulle; gli hook sono rimossi anche in caso di errore.
 
-#### Epoch 0
+## Commento dei risultati
 
-No Skip Connections        | Skip Connections
-:-------------------------:|:-------------------------:
-![](images/grad_no_skip_epoch0.png) | ![](images/grad_skip_epoch0.png)
-
-#### Epoch 9
-No Skip Connections           | Skip Connections
-:-------------------------:|:-------------------------:
-![](images/grad_no_skip_epoch9.png)| ![](images/grad_skip_epoch9.png)
-
-#### Loss
-Without Skip Connections:
-![Results: Loss no Skip Connection](images/loss_no_skip.png)
-
-With Skip Connections:
-![Results: Loss with Skip Connection](images/loss_skip.png)
-
-We can see that the model with skip connections has a smoother gradient magnitude and a lower loss than the model without skip connections.
-
-### Other Results
-
-I trained the resnet18 model with Adam optimizer instead of SGD. The results are similar to the previous ones.
-
-#### Epoch 0
-No Skip Connections        | Skip Connections
-:-------------------------:|:-------------------------:
-![](images/grads_no_skip_connections_epoch0.png) | ![](images/grads_skip_connections_epoch0.png)
-
-#### Epoch 9
-No Skip Connections           | Skip Connections
-:-------------------------:|:-------------------------:
-![](images/grads_no_skip_connections_epoch10.png) | ![](images/grads_skip_connections_epoch10.png)
-
-#### Train Losses
-![Results: Train Losses](images/loss_skip_connection.png)
-
-## 2.2. Exercise 2 [FCN]
-
-### From the paper: https://arxiv.org/abs/1411.4038
-
-For the second exercise, I have implemented a Fully Convolutional Network (FCN) using the ResNet18 model. 
-
-![FCN Model](images/fcn_model.jpg)
-
-The FCN model is used for image segmentation on the MNIST dataset.
-For the ground truth of the image, I convert the image to a binary image, where the number pixel values the label and the background pixel values another class (background label).
-
-For the results of the model, I have plotted the input image, the result of the model, and the comparison between the ground truth and the result of the model.
-
-### Results
-![Results: Resnet18FCN](images/result-exercise2.png)
-![Results: Resnet18FCN](images/result-exercise2_2.png)
-![Results: Resnet18FCN](images/result-exercise2_3.png)
-
-## 2.3. Exercise 3 [Grad-CAM]
-
-### From the paper: https://arxiv.org/abs/1610.02391
-
-I have implemented the Grad-CAM algorithm to visualize the activations of the network on ResNet18 on the CIFAR10 dataset. We can see the output of the image with the activations of the network. The Grad-CAM algorithm helps us to understand what the network is looking at when it is making a prediction.
-
-The results are not very clear, this is because the images are very small.
-
-### GradCAM
-
-![GradCAM](images/grad-cam_model.png)
-
-- Compute the Gradient of the Score with Respect to Feature Maps:
-
-    Let $y^c$ be the score for class c, and let $A^k$ represent the feature maps of the k-th convolutional layer. The gradient of $y^c$ with respect to $A^k$ is given by: $\frac{\partial y^c}{\partial A^k}$
-
-- Average the Gradients to Get Weights:
-
-    To get the weights $\alpha^k_c$ for each feature map, you average the gradients over all spatial locations: $\alpha^k_c = \frac{1}{Z} \sum_{i,j}\frac{\partial y^c}{\partial A^k_{ij}}$ where Z is the number of spatial locations, and $A^k_{ij}$ is the value of the k-th feature map at spatial location (i, j).
-
-- Compute the Heatmap:
-
-    The heatmap is computed by taking a weighted sum of the feature maps in the layer: $L^c_{GradCAM} = ReLU(\sum_k \alpha^k_c A^k)$ where $L^c_{GradCAM}$ is the heatmap for class c.
-
-### Results
-![Results: GradCamModel on Resnet18](images/result-exercise3.png)
-![Results: GradCamModel on Resnet18](images/result-exercise3_1.png)
-![Results: GradCamModel on Resnet18](images/result_exercise3_2.png)
-![Results: GradCamModel on Resnet18](images/result_exercise3_3.png)
-![Results: GradCamModel on Resnet18](images/result_exercise3_4.png)
-
-
+Dopo l'esecuzione confronta loss di training, accuracy di validation e gradienti fra profondità e skip. Descrivi i casi in cui reti più profonde degradano o migliorano senza imporre una conclusione ai dati. Per FCN e Grad-CAM commenta gli esempi corretti e gli errori visibili. I risultati reali della riscrittura sono in [RISULTATI.md](../RISULTATI.md); i risultati archiviati restano distinti.
